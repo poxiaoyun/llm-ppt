@@ -1,0 +1,33 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="enterprise-bg" x1="18" y1="14" x2="228" y2="238" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1E40AF"/>
+      <stop offset="0.52" stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#0F766E"/>
+    </linearGradient>
+    <linearGradient id="enterprise-sheen" x1="58" y1="38" x2="198" y2="212" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="enterprise-dot" x1="150" y1="72" x2="210" y2="204" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#67E8F9"/>
+      <stop offset="1" stop-color="#34D399"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="10" y="10" width="236" height="236" rx="60" fill="url(#enterprise-bg)"/>
+  <rect x="18" y="18" width="220" height="220" rx="52" fill="url(#enterprise-sheen)"/>
+
+  <rect x="56" y="54" width="32" height="148" rx="16" fill="#F8FBFF"/>
+  <rect x="56" y="54" width="128" height="30" rx="15" fill="#F8FBFF"/>
+  <rect x="56" y="113" width="114" height="30" rx="15" fill="#F8FBFF"/>
+  <rect x="56" y="172" width="128" height="30" rx="15" fill="#F8FBFF"/>
+
+  <circle cx="195" cy="69" r="15" fill="url(#enterprise-dot)"/>
+  <circle cx="181" cy="128" r="15" fill="url(#enterprise-dot)"/>
+  <circle cx="195" cy="187" r="15" fill="url(#enterprise-dot)"/>
+
+  <path d="M88 69H180" stroke="#93C5FD" stroke-opacity="0.28" stroke-width="8" stroke-linecap="round"/>
+  <path d="M88 128H166" stroke="#93C5FD" stroke-opacity="0.24" stroke-width="8" stroke-linecap="round"/>
+  <path d="M88 187H180" stroke="#93C5FD" stroke-opacity="0.2" stroke-width="8" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,2047 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Portal 企业级 AI Token 运营平台</title>
+    <link rel="icon" href="assets/images/webp/logo-placeholder.webp" type="image/webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/ppt-design-system.css">
+    <link rel="stylesheet" href="css/slides.css">
+</head>
+<body>
+    <div class="presentation-container" id="presentation">
+        <div class="slide-viewport" id="viewport">
+            <div class="slides-wrapper" id="slides-wrapper">
+                <section class="slide active no-watermark ppt-slide-shell ppt-theme-blue slide-cover" id="slide-1" data-title="封面">
+                    <div class="slide-cover__ambient"></div>
+                    <div class="slide-cover__floor"></div>
+
+                    <div class="ppt-cover-shell slide-cover__shell">
+                        <div class="ppt-cover-brand slide-cover__brand">
+                            <img src="assets/images/webp/logo-placeholder.webp" alt="晓石 Logo">
+                            <span></span>
+                        </div>
+
+                        <div class="slide-cover__center">
+                            <h1 class="ppt-cover-title slide-cover__title">
+                                <span class="slide-cover__title-line">
+                                    <span class="slide-cover__title-main">大模型 AI  Portal</span>
+                                </span>
+                                <span class="slide-cover__title-line slide-cover__title-line-secondary">运营平台</span>
+                            </h1>
+
+                            <div class="slide-cover__divider"></div>
+
+                            <p class="ppt-cover-subtitle slide-cover__subtitle">企业级一站式 Token 运营平台，助力企业高效构建 AI 应用</p>
+                        </div>
+
+                        <div class="slide-cover__meta">
+                            <div class="slide-cover__company">成都破晓石科技有限公司</div>
+                            <div class="slide-cover__presenter">演讲者：[马青] / [联合创始人] / [2026/4/10]</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="slide ppt-slide-shell ppt-theme-neutral slide-background" id="slide-2-1" data-title="行业背景 - 范式迁移">
+                    <div class="ppt-bg-grid"></div>
+                    <div class="ppt-bg-glow"></div>
+
+                    <div class="ppt-page-header ppt-safe-watermark slide-background__header">
+                        <h2 class="ppt-page-title">大模型Token行业背景</h2>
+                        <p class="ppt-page-subtitle">大模型驱动的新软件范式：软件的核心正在从“人操作软件”演变为“人指挥 AI，AI 操作软件”。</p>
+                    </div>
+
+                    <div class="ppt-layout-two-col slide-background__layout slide-background__layout-vertical">
+                        <article class="ppt-panel ppt-animate-in ppt-delay-1 slide-background__panel slide-background__panel-paradigm">
+                            <div class="ppt-panel-head">
+                                <h3 class="ppt-panel-title">大模型推动软件范式迁移</h3>
+                                <p class="ppt-panel-desc">过去 20 年软件演进路径，当前正处于“辅助智能化”向“自主执行化”的关键跃迁阶段。</p>
+                            </div>
+
+                            <div class="ppt-metric-grid slide-background__metric-grid">
+                                <div class="ppt-metric-card slide-background__metric-card">
+                                    <span class="ppt-metric-label">Stage 1</span>
+                                    <div class="ppt-metric-value slide-background__metric-value">SaaS</div>
+                                    <div class="ppt-metric-desc">软件以标准化功能和固定流程为核心，人通过界面操作系统完成查询、录入、审批和执行。</div>
+                                </div>
+                                <div class="ppt-metric-card slide-background__metric-card">
+                                    <span class="ppt-metric-label">Stage 2</span>
+                                    <div class="ppt-metric-value slide-background__metric-value">Copilot</div>
+                                    <div class="ppt-metric-desc">AI 开始参与内容生成、搜索总结和辅助决策，显著提升人的效率，但执行主导权仍掌握在人手里。</div>
+                                </div>
+                                <div class="ppt-metric-card slide-background__metric-card">
+                                    <span class="ppt-metric-label">Stage 3</span>
+                                    <div class="ppt-metric-value slide-background__metric-value">Agent</div>
+                                    <div class="ppt-metric-desc">AI 可以理解目标、调用工具、跨步骤执行任务，并在流程中根据环境反馈动态调整策略和输出。</div>
+                                </div>
+                                <div class="ppt-metric-card slide-background__metric-card">
+                                    <span class="ppt-metric-label">Stage 4</span>
+                                    <div class="ppt-metric-value slide-background__metric-value">Harness</div>
+                                    <div class="ppt-metric-desc">围绕 AI Agent 尤其是 Coding Agent，构建约束机制、反馈回路、工作流控制和持续改进循环的系统工程实践。</div>
+                                </div>
+                            </div>
+
+                            <div class="slide-background__paradigm-detail">
+                                <article class="ppt-card ppt-card-capability ppt-animate-in ppt-delay-3 slide-background__card slide-background__card-compact">
+                                    <div class="ppt-card-topline">
+                                    <span class="ppt-card-index">01</span>
+                                    <span class="ppt-card-en">Capability Shift</span>
+                                    </div>
+                                    <h3 class="ppt-card-title">AI 能力边界发生质变</h3>
+                                    <ul class="ppt-card-list">
+                                        <li><strong>从：</strong>单纯生成内容，如写文案、写代码、回答基础问题</li>
+                                        <li><strong>到：</strong>调用外部工具、执行复杂任务、根据反馈持续优化结果</li>
+                                        <li><strong>结论：</strong>AI 正在成为真实可操作的生产力单元</li>
+                                    </ul>
+                                </article>
+
+                                <article class="ppt-card ppt-card-capability ppt-animate-in ppt-delay-4 slide-background__card slide-background__card-compact">
+                                    <div class="ppt-card-topline">
+                                    <span class="ppt-card-index">02</span>
+                                    <span class="ppt-card-en">Tech Drivers</span>
+                                    </div>
+                                    <h3 class="ppt-card-title">底层技术动力逐渐成熟</h3>
+                                    <ul class="ppt-card-list">
+                                        <li>Function Calling 与 Tool Use 生态已广泛落地</li>
+                                        <li>RAG 与 Agent Framework 等工程框架日趋稳健</li>
+                                        <li>多模型调度能力逐渐成熟，进入生产可用阶段</li>
+                                        <li><strong>结论：</strong>大模型调度任务及执行已成为工程现实</li>
+                                    </ul>
+                                </article>
+                            </div>
+                        </article>
+
+                        <div class="ppt-conclusion-bar ppt-animate-in ppt-delay-2 slide-background__insight-full">软件正在从“人操作”转向“人指挥 AI、AI 执行”，企业需要统一的网关与平台能力来承接这一变革。</div>
+                    </div>
+                </section>
+
+                <section class="slide ppt-slide-shell ppt-theme-neutral slide-background" id="slide-2-2" data-title="行业背景 - 企业痛点">
+                    <div class="ppt-bg-grid"></div>
+                    <div class="ppt-bg-glow"></div>
+
+                    <div class="ppt-page-header ppt-safe-watermark slide-background__header">
+                        <h2 class="ppt-page-title">企业面临的核心挑战</h2>
+                        <p class="ppt-page-subtitle">尽管 AI 能力强大，但落地存在断层，企业仍面临“用不起来”的困境。</p>
+                    </div>
+
+                    <div class="ppt-layout-two-col slide-background__layout slide-background__layout-challenge-single">
+                        <article class="ppt-panel ppt-animate-in ppt-delay-1 slide-background__panel slide-background__panel-challenge slide-background__panel-plain">
+                            <div class="ppt-panel-head">
+                                <h3 class="ppt-panel-title">落地断层正在从“调用模型”转向“运营系统”</h3>
+                                <p class="ppt-panel-desc">企业不是缺少模型，而是缺少一套能够承接多模型接入、业务编排、权限治理和持续运行的统一网关。</p>
+                            </div>
+
+                            <div class="slide-background__challenge-list">
+                                <article class="ppt-card ppt-card-capability ppt-animate-in ppt-delay-2 slide-background__card slide-background__card-challenge-row">
+                                    <div class="ppt-card-topline">
+                                        <span class="ppt-card-index">01</span>
+                                        <span class="ppt-card-en">Fragmented Tools</span>
+                                    </div>
+                                    <h3 class="ppt-card-title">工具碎片化</h3>
+                                    <ul class="ppt-card-list">
+                                        <li>大量系统如 CRM、BI、ERP、Notion 与各类模型服务并存，接口、权限和数据格式彼此割裂。</li>
+                                        <li>数据与动作分散在多个系统里，AI 很难通过统一入口稳定调用和跨系统编排。</li>
+                                    </ul>
+                                </article>
+
+                                <article class="ppt-card ppt-card-capability ppt-animate-in ppt-delay-3 slide-background__card slide-background__card-challenge-row">
+                                    <div class="ppt-card-topline">
+                                        <span class="ppt-card-index">02</span>
+                                        <span class="ppt-card-en">Execution Gap</span>
+                                    </div>
+                                    <h3 class="ppt-card-title">AI 无法真正执行</h3>
+                                    <ul class="ppt-card-list">
+                                        <li>多数 AI 产品仍停留在对话和回答层，缺少与真实业务工具、流程和权限体系的可靠接驳。</li>
+                                        <li>没有统一网关和工具编排能力，AI 难以把理解、决策和执行串成完整闭环。</li>
+                                    </ul>
+                                </article>
+
+                                <article class="ppt-card ppt-card-capability ppt-animate-in ppt-delay-4 slide-background__card slide-background__card-challenge-row">
+                                    <div class="ppt-card-topline">
+                                        <span class="ppt-card-index">03</span>
+                                        <span class="ppt-card-en">Low Automation</span>
+                                    </div>
+                                    <h3 class="ppt-card-title">自动化程度低</h3>
+                                    <ul class="ppt-card-list">
+                                        <li>关键流程依然依赖人工驱动和人工兜底，AI 难以跨系统持续运行、感知状态并自我修正。</li>
+                                        <li>缺少长效路由、反馈与治理机制后，企业很难把 AI 从试点工具升级为稳定生产能力。</li>
+                                    </ul>
+                                </article>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="ppt-conclusion-bar slide-background__conclusion">大模型正把软件从“工具时代”推进到“智能执行时代”，企业迫切需要全新的 AI 网关与入口来承载并管理这一变革。</div>
+                </section>
+
+                <section class="slide ppt-slide-shell ppt-theme-blue slide-overview" id="slide-3" data-title="产品概览">
+                    <div class="ppt-bg-grid"></div>
+                    <div class="ppt-bg-glow"></div>
+                    <div class="ppt-bg-orbit"></div>
+
+                    <div class="ppt-page-header ppt-safe-watermark slide-overview__header">
+                        <h2 class="ppt-page-title">企业级大模型API平台</h2>
+                        <p class="ppt-page-subtitle">以一个统一入口承接多模型 API 接入、路由回退、配额计量与安全审计，让企业从“能调用”走向“可治理、可运营、可扩展”。</p>
+                    </div>
+
+                    <div class="slide-overview__stage">
+                        <svg class="slide-overview__network" viewBox="0 0 1600 620" preserveAspectRatio="none" aria-hidden="true"></svg>
+
+                        <div class="slide-overview__column slide-overview__column-left">
+                            <div class="slide-overview__section-tag">Client Side</div>
+                            <h3 class="slide-overview__column-title">大模型调用客户端</h3>
+                            <p class="slide-overview__column-desc">把不同终端入口统一收口到 Rune Gateway，让业务侧用一致方式接入模型能力。</p>
+
+                            <article class="ppt-card ppt-surface-blue ppt-accent-blue ppt-animate-in ppt-delay-1 slide-overview__side-card">
+                                <div class="slide-overview__side-badge">PC</div>
+                                <div class="slide-overview__side-copy">
+                                    <h4>AI 智能体</h4>
+                                    <p>面向业务流程和系统协作的 Agent，通过统一接口调用规划与执行能力。</p>
+                                </div>
+                            </article>
+
+                            <article class="ppt-card ppt-surface-blue ppt-accent-blue ppt-animate-in ppt-delay-2 slide-overview__side-card">
+                                <div class="slide-overview__side-badge">BOT</div>
+                                <div class="slide-overview__side-copy">
+                                    <h4>具身机器人</h4>
+                                    <p>服务和工业机器人接入感知、理解与动作决策能力，统一走网关调用。</p>
+                                </div>
+                            </article>
+
+                            <article class="ppt-card ppt-surface-blue ppt-accent-blue ppt-animate-in ppt-delay-3 slide-overview__side-card">
+                                <div class="slide-overview__side-badge">USR</div>
+                                <div class="slide-overview__side-copy">
+                                    <h4>Vibe Coding</h4>
+                                    <p>面向开发协作与代码生成场景，快速调用代码理解、生成与改写能力。</p>
+                                </div>
+                            </article>
+
+                            <article class="ppt-card ppt-surface-blue ppt-accent-blue ppt-animate-in ppt-delay-4 slide-overview__side-card">
+                                <div class="slide-overview__side-badge">CAR</div>
+                                <div class="slide-overview__side-copy">
+                                    <h4>智能驾驶</h4>
+                                    <p>面向座舱与驾驶辅助场景，接入视觉理解、语音交互与决策推理能力。</p>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="slide-overview__center">
+                            <div class="slide-overview__halo slide-overview__halo-lg"></div>
+                            <div class="slide-overview__halo slide-overview__halo-md"></div>
+                            <div class="slide-overview__halo slide-overview__halo-sm"></div>
+
+                            <div class="slide-overview__gateway ppt-animate-in ppt-delay-2">
+                                <div class="slide-overview__gateway-inner">
+                                    <span>Unified AI Access Layer</span>
+                                    <h3>模型网关</h3>
+                                    <p>统一 API 入口</p>
+                                </div>
+                            </div>
+
+                            <div class="slide-overview__gateway-tags ppt-animate-in ppt-delay-3">
+                                <span class="ppt-tag ppt-tag-strong">统一协议</span>
+                                <span class="ppt-tag">策略编排</span>
+                                <span class="ppt-tag">弹性路由</span>
+                            </div>
+                        </div>
+
+                        <div class="slide-overview__column slide-overview__column-right">
+                            <div class="slide-overview__section-tag">Model Supply</div>
+                            <h3 class="slide-overview__column-title">上游模型接入</h3>
+                            <p class="slide-overview__column-desc">同时承接第三方模型、Rune 平台自建大模型服务，以及视觉、语音等专用小模型。</p>
+
+                            <article class="ppt-panel ppt-animate-in ppt-delay-1 slide-overview__supply-panel">
+                                <div class="slide-overview__supply-head">
+                                    <h4>第三方模型供应商</h4>
+                                    <span>API Providers</span>
+                                </div>
+                                <div class="slide-overview__chip-group">
+                                    <span>OpenAI</span><span>Anthropic</span><span>Google</span><span>DeepSeek</span><span>智谱</span>
+                                    <span>豆包</span><span>Qwen</span><span>Moonshot</span><span>OpenRouter</span><span>硅基流动</span>
+                                </div>
+                            </article>
+
+                            <article class="ppt-panel ppt-animate-in ppt-delay-2 slide-overview__supply-panel slide-overview__supply-panel-green">
+                                <div class="slide-overview__supply-head">
+                                    <h4>Rune 平台模型服务</h4>
+                                    <span>Private LLM Services</span>
+                                </div>
+                                <div class="slide-overview__chip-group">
+                                    <span>私有化部署模型</span><span>企业微调模型</span><span>推理加速服务</span><span>知识增强模型</span>
+                                </div>
+                            </article>
+
+                            <article class="ppt-panel ppt-animate-in ppt-delay-3 slide-overview__supply-panel slide-overview__supply-panel-purple">
+                                <div class="slide-overview__supply-head">
+                                    <h4>视觉 / 语音 / 小模型</h4>
+                                    <span>Specialized Models</span>
+                                </div>
+                                <div class="slide-overview__chip-group">
+                                    <span>OCR / VLM</span><span>ASR / TTS</span><span>Embedding</span><span>Reranker</span><span>检测分类</span><span>多模态理解</span>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="slide-overview__capabilities">
+                        <article class="ppt-card ppt-card-capability ppt-animate-in ppt-delay-1 slide-overview__cap-card">
+                            <div class="ppt-card-topline">
+                                <span class="ppt-card-index">01</span>
+                                <span class="ppt-card-en">Format Compatibility</span>
+                            </div>
+                            <h3 class="ppt-card-title">统一 API 格式</h3>
+                            <p class="slide-overview__cap-desc">兼容 OpenAI API 与 Anthropic API 请求格式，支持流式输出与多模态接入。</p>
+                        </article>
+
+                        <article class="ppt-card ppt-card-capability ppt-animate-in ppt-delay-2 slide-overview__cap-card">
+                            <div class="ppt-card-topline">
+                                <span class="ppt-card-index">02</span>
+                                <span class="ppt-card-en">Routing &amp; Fallback</span>
+                            </div>
+                            <h3 class="ppt-card-title">多渠道路由与回退</h3>
+                            <p class="slide-overview__cap-desc">按模型能力、成本和可用性选择最优通道，并支持首选路由和自动降级。</p>
+                        </article>
+
+                        <article class="ppt-card ppt-card-capability ppt-animate-in ppt-delay-3 slide-overview__cap-card">
+                            <div class="ppt-card-topline">
+                                <span class="ppt-card-index">03</span>
+                                <span class="ppt-card-en">Rate Limit &amp; Metering</span>
+                            </div>
+                            <h3 class="ppt-card-title">精细化限流与计费</h3>
+                            <p class="slide-overview__cap-desc">基于 RPM、TPM 和 Token 消耗做多维限速、配额管理与租户级成本统计。</p>
+                        </article>
+
+                        <article class="ppt-card ppt-card-capability ppt-animate-in ppt-delay-4 slide-overview__cap-card">
+                            <div class="ppt-card-topline">
+                                <span class="ppt-card-index">04</span>
+                                <span class="ppt-card-en">Security &amp; Compliance</span>
+                            </div>
+                            <h3 class="ppt-card-title">安全与合规</h3>
+                            <p class="slide-overview__cap-desc">内置内容审查、IP 白名单和审计留痕，把访问治理和风控前置到统一网关层。</p>
+                        </article>
+                    </div>
+
+                </section>
+
+                <section class="slide ppt-slide-shell ppt-theme-amber slide-version" id="slide-4" data-title="产品版本">
+                    <div class="ppt-bg-grid"></div>
+                    <div class="ppt-bg-glow"></div>
+                    <div class="ppt-bg-sheen"></div>
+
+                    <div class="ppt-page-header ppt-safe-watermark slide-version__header">
+                        <h2 class="ppt-page-title">产品版本</h2>
+                        <p class="ppt-page-subtitle">运营平台能力沿着“可用、可控、可运营”逐步升级，满足从试用验证到企业级落地的不同阶段需求。</p>
+                    </div>
+
+                    <div class="slide-version__grid">
+                        <article class="ppt-panel ppt-animate-in ppt-delay-1 slide-version__plan slide-version__plan-free">
+                            <h3 class="slide-version__plan-title">专业版（SaaS）</h3>
+                            <p class="slide-version__plan-desc">适合个人开发者、小团队与快速验证场景，先以最低门槛跑通模型接入与基础治理。</p>
+                            <div class="slide-version__plan-highlight slide-version__plan-highlight-free">
+                                <strong>默认空间</strong>
+                                <span>所有用户共享一个通道</span>
+                            </div>
+                            <ul class="slide-version__list">
+                                <li>主流大模型聚合，通过消耗积分访问主流模型</li>
+                                <li>用户组管理、API Key 管理、基础权限控制</li>
+                                <li>默认业务空间与统一端点</li>
+                                <li>支持用户组级、API Key 级作用域</li>
+                            </ul>
+                            <div class="slide-version__meta">适合需求验证、PoC 和低成本试用。</div>
+                        </article>
+
+                        <article class="ppt-panel ppt-animate-in ppt-delay-2 slide-version__plan slide-version__plan-pro">
+                            <h3 class="slide-version__plan-title">旗舰版（SaaS）</h3>
+                            <p class="slide-version__plan-desc">适合中小企业和生产环境，把网关从“能接入”升级为“可编排、可治理、可优化”的运营系统。</p>
+                            <div class="slide-version__plan-highlight slide-version__plan-highlight-pro">
+                                <strong>自定义空间</strong>
+                                <span>隔离和管理各自的访问与资源</span>
+                            </div>
+                            <ul class="slide-version__list">
+                                <li>包含专业版全部能力，并支持自定义业务空间</li>
+                                <li>自主配置供应商，成本透明、接入灵活</li>
+                                <li>支持负载均衡、故障转移、A/B 测试等高级路由</li>
+                                <li>完整权限管理、审计追踪、预算告警与安全治理</li>
+                                <li>支持资源隔离和完整作用域体系</li>
+                            </ul>
+                            <div class="slide-version__meta">适合正式上线、客户分层运营与多模型成本优化。</div>
+                        </article>
+
+                        <article class="ppt-panel ppt-animate-in ppt-delay-3 slide-version__plan slide-version__plan-enterprise">
+                            <h3 class="slide-version__plan-title">企业版（私有化 / 定制化）</h3>
+                            <p class="slide-version__plan-desc">面向大型企业和强合规场景，在高级版能力上继续强化 SLA、安全、支持体系与定制交付方式。</p>
+                            <div class="slide-version__plan-highlight slide-version__plan-highlight-enterprise">
+                                <strong>企业级交付</strong>
+                                <span>无限业务空间，支持专属服务与私有化方案</span>
+                            </div>
+                            <ul class="slide-version__list">
+                                <li>包含 SaaS 版本全部能力</li>
+                                <li>无上限自定义业务空间</li>
+                                <li>企业级 SLA 保障与专属技术支持</li>
+                                <li>支持定制化开发和私有化部署</li>
+                            </ul>
+                            <div class="slide-version__meta">适合多业务线集团、关键生产系统和严格合规要求。</div>
+                        </article>
+                    </div>
+
+                    <div class="slide-version__rail">
+                        <div class="slide-version__rail-line"></div>
+                        <div class="slide-version__rail-step">
+                            <span>01</span>
+                            <strong>快速可用</strong>
+                            <p>先用统一网关和积分完成模型接入验证。</p>
+                        </div>
+                        <div class="slide-version__rail-step slide-version__rail-step-featured">
+                            <span>02</span>
+                            <strong>生产控制力</strong>
+                            <p>把路由、权限、计费和治理能力真正落到生产环境。</p>
+                        </div>
+                        <div class="slide-version__rail-step">
+                            <span>03</span>
+                            <strong>企业级交付</strong>
+                            <p>通过 SLA、定制与私有化满足复杂组织和合规要求。</p>
+                        </div>
+                    </div>
+
+                    <div class="ppt-conclusion-bar slide-version__conclusion">从基础版到企业版，不是简单加功能，而是沿着试用验证、生产运营、企业交付三个阶段递进升级。</div>
+                </section>
+
+                <section class="slide ppt-slide-shell ppt-theme-neutral slide-compare" id="slide-5" data-title="功能矩阵">
+                    <div class="ppt-bg-grid"></div>
+                    <div class="ppt-bg-glow"></div>
+
+                    <div class="ppt-page-header ppt-safe-watermark slide-compare__header">
+                        <h2 class="ppt-page-title">功能矩阵</h2>
+                        <p class="ppt-page-subtitle">不同版本的核心差异不只在功能多少，更在于是否具备完整的业务空间、路由治理、安全控制和企业交付能力。</p>
+                    </div>
+
+                    <div class="slide-compare__matrix">
+                        <div class="slide-compare__matrix-head slide-compare__matrix-head-feature">功能</div>
+                        <div class="slide-compare__matrix-head slide-compare__matrix-head-free">专业版（SaaS）</div>
+                        <div class="slide-compare__matrix-head slide-compare__matrix-head-pro">旗舰版（SaaS）</div>
+                        <div class="slide-compare__matrix-head slide-compare__matrix-head-enterprise">企业版</div>
+
+                        <div class="slide-compare__group">基础接入能力</div>
+                        <div class="slide-compare__spacer"></div>
+                        <div class="slide-compare__spacer"></div>
+                        <div class="slide-compare__spacer"></div>
+
+                        <div class="slide-compare__feature">LLM API 聚合</div>
+                        <div class="slide-compare__cell slide-compare__cell-yes">支持</div>
+                        <div class="slide-compare__cell slide-compare__cell-yes">支持</div>
+                        <div class="slide-compare__cell slide-compare__cell-yes">支持</div>
+
+                        <div class="slide-compare__feature">默认业务空间</div>
+                        <div class="slide-compare__cell slide-compare__cell-yes">支持</div>
+                        <div class="slide-compare__cell slide-compare__cell-yes">支持</div>
+                        <div class="slide-compare__cell slide-compare__cell-yes">支持</div>
+
+                        <div class="slide-compare__feature">用户组管理</div>
+                        <div class="slide-compare__cell slide-compare__cell-yes">支持</div>
+                        <div class="slide-compare__cell slide-compare__cell-yes">支持</div>
+                        <div class="slide-compare__cell slide-compare__cell-yes">支持</div>
+
+                        <div class="slide-compare__feature">API Key 管理</div>
+                        <div class="slide-compare__cell slide-compare__cell-yes">支持</div>
+                        <div class="slide-compare__cell slide-compare__cell-yes">支持</div>
+                        <div class="slide-compare__cell slide-compare__cell-yes">支持</div>
+
+                        <div class="slide-compare__feature">基础权限控制</div>
+                        <div class="slide-compare__cell slide-compare__cell-yes">支持</div>
+                        <div class="slide-compare__cell slide-compare__cell-yes">支持</div>
+                        <div class="slide-compare__cell slide-compare__cell-yes">支持</div>
+
+                        <div class="slide-compare__group">路由、治理与运营</div>
+                        <div class="slide-compare__spacer"></div>
+                        <div class="slide-compare__spacer"></div>
+                        <div class="slide-compare__spacer"></div>
+
+                        <div class="slide-compare__feature">自定义业务空间</div>
+                        <div class="slide-compare__cell slide-compare__cell-no">不支持</div>
+                        <div class="slide-compare__cell slide-compare__cell-mid">5 个</div>
+                        <div class="slide-compare__cell slide-compare__cell-yes">无限制</div>
+
+                        <div class="slide-compare__feature">自主配置供应商</div>
+                        <div class="slide-compare__cell slide-compare__cell-no">不支持</div>
+                        <div class="slide-compare__cell slide-compare__cell-yes">支持</div>
+                        <div class="slide-compare__cell slide-compare__cell-yes">支持</div>
+
+                        <div class="slide-compare__feature">高级路由策略</div>
+                        <div class="slide-compare__cell slide-compare__cell-no">不支持</div>
+                        <div class="slide-compare__cell slide-compare__cell-yes">支持</div>
+                        <div class="slide-compare__cell slide-compare__cell-yes">支持</div>
+
+                        <div class="slide-compare__feature">负载均衡 / 故障转移</div>
+                        <div class="slide-compare__cell slide-compare__cell-no">不支持</div>
+                        <div class="slide-compare__cell slide-compare__cell-yes">支持</div>
+                        <div class="slide-compare__cell slide-compare__cell-yes">支持</div>
+
+                        <div class="slide-compare__feature">完整审计追踪</div>
+                        <div class="slide-compare__cell slide-compare__cell-no">不支持</div>
+                        <div class="slide-compare__cell slide-compare__cell-yes">支持</div>
+                        <div class="slide-compare__cell slide-compare__cell-yes">支持</div>
+
+                        <div class="slide-compare__feature">成本分析优化</div>
+                        <div class="slide-compare__cell slide-compare__cell-mid">基础</div>
+                        <div class="slide-compare__cell slide-compare__cell-yes">完整</div>
+                        <div class="slide-compare__cell slide-compare__cell-yes">完整</div>
+
+                        <div class="slide-compare__feature">预算告警 / 安全治理 / 配额管理</div>
+                        <div class="slide-compare__cell slide-compare__cell-no">不支持</div>
+                        <div class="slide-compare__cell slide-compare__cell-yes">支持</div>
+                        <div class="slide-compare__cell slide-compare__cell-yes">支持</div>
+
+                        <div class="slide-compare__feature">资源隔离</div>
+                        <div class="slide-compare__cell slide-compare__cell-no">不支持</div>
+                        <div class="slide-compare__cell slide-compare__cell-yes">支持</div>
+                        <div class="slide-compare__cell slide-compare__cell-yes">支持</div>
+
+                        <div class="slide-compare__group">服务边界</div>
+                        <div class="slide-compare__spacer"></div>
+                        <div class="slide-compare__spacer"></div>
+                        <div class="slide-compare__spacer"></div>
+
+                        <div class="slide-compare__feature">作用域支持</div>
+                        <div class="slide-compare__cell slide-compare__cell-mid">用户组 / Key</div>
+                        <div class="slide-compare__cell slide-compare__cell-yes">完整</div>
+                        <div class="slide-compare__cell slide-compare__cell-yes">完整</div>
+
+                        <div class="slide-compare__feature">技术支持</div>
+                        <div class="slide-compare__cell slide-compare__cell-mid">社区</div>
+                        <div class="slide-compare__cell slide-compare__cell-mid">邮件</div>
+                        <div class="slide-compare__cell slide-compare__cell-yes">专属</div>
+
+                        <div class="slide-compare__feature">SLA / 定制 / 私有化</div>
+                        <div class="slide-compare__cell slide-compare__cell-no">不支持</div>
+                        <div class="slide-compare__cell slide-compare__cell-no">不支持</div>
+                        <div class="slide-compare__cell slide-compare__cell-yes">支持</div>
+                    </div>
+                </section>
+
+                <section class="slide ppt-slide-shell ppt-theme-green slide-token" id="slide-6" data-title="Token 介绍">
+                    <div class="ppt-bg-grid"></div>
+                    <div class="ppt-bg-glow"></div>
+                    <div class="ppt-bg-sheen"></div>
+
+                    <div class="ppt-page-header ppt-safe-watermark slide-token__header">
+                        <h2 class="ppt-page-title">Token 介绍</h2>
+                        <p class="ppt-page-subtitle">Token 是模型处理文本时的最小单位。理解 token，才能理解上下文长度、响应成本和输入输出的方式。</p>
+                    </div>
+
+                    <div class="ppt-layout-two-col slide-token__layout">
+                        <article class="ppt-panel ppt-animate-in ppt-delay-1 slide-token__panel slide-token__panel-meaning">
+                            <div class="ppt-panel-head">
+                                <h3 class="ppt-panel-title">什么是 Token</h3>
+                                <p class="ppt-panel-desc">可以把 token 理解成模型切分文本时使用的“文本片段”。不同语言、标点和空格的切分方式不同，因此 token 数不等于字数或词数。</p>
+                            </div>
+
+                            <div class="ppt-metric-grid slide-token__metric-grid">
+                                <div class="ppt-metric-card slide-token__metric-card">
+                                    <span class="ppt-metric-label">English</span>
+                                    <div class="ppt-metric-value slide-token__metric-value">1 word ≈ 1 token</div>
+                                    <div class="ppt-metric-desc">英文通常按词或词片段切分，一个单词常常接近 1 个 token。</div>
+                                </div>
+                                <div class="ppt-metric-card slide-token__metric-card">
+                                    <span class="ppt-metric-label">中文</span>
+                                    <div class="ppt-metric-value slide-token__metric-value">1 字 ≈ 1-2 token</div>
+                                    <div class="ppt-metric-desc">中文常常按字或子词切分，单个汉字可能拆成 1 到 2 个 token。</div>
+                                </div>
+                                <div class="ppt-metric-card slide-token__metric-card">
+                                    <span class="ppt-metric-label">标点与空格</span>
+                                    <div class="ppt-metric-value slide-token__metric-value">也算 token</div>
+                                    <div class="ppt-metric-desc">标点、空格和部分特殊符号都会被单独计入 token 数。</div>
+                                </div>
+                            </div>
+
+                            <div class="slide-token__rules">
+                                <article class="ppt-card ppt-card-capability ppt-animate-in ppt-delay-2 slide-token__rule-card">
+                                    <div class="ppt-card-topline">
+                                        <span class="ppt-card-index">01</span>
+                                        <span class="ppt-card-en">Context Window</span>
+                                    </div>
+                                    <h3 class="ppt-card-title">决定模型一次能“看见”多少内容</h3>
+                                    <p class="ppt-card-desc">输入越长，消耗的 token 越多；超过上下文窗口后，模型就无法完整记住前面的信息。</p>
+                                </article>
+
+                                <article class="ppt-card ppt-card-capability ppt-animate-in ppt-delay-3 slide-token__rule-card">
+                                    <div class="ppt-card-topline">
+                                        <span class="ppt-card-index">02</span>
+                                        <span class="ppt-card-en">Cost Metering</span>
+                                    </div>
+                                    <h3 class="ppt-card-title">决定调用成本如何统计</h3>
+                                    <p class="ppt-card-desc">很多平台按输入 token + 输出 token 计费，所以同样一句话，语言和写法不同，成本也会不同。</p>
+                                </article>
+                            </div>
+                        </article>
+
+                        <article class="ppt-panel ppt-animate-in ppt-delay-2 slide-token__panel slide-token__panel-example">
+                            <div class="ppt-panel-head">
+                                <h3 class="ppt-panel-title">计算示例</h3>
+                                <p class="ppt-panel-desc">下面的示例只用于帮助建立直觉，实际 token 数会因模型分词器不同而略有差异。</p>
+                            </div>
+
+                            <div class="ppt-layout-stack slide-token__example-stack">
+                                <article class="ppt-card ppt-animate-in ppt-delay-3 slide-token__example-card">
+                                    <div class="ppt-card-topline">
+                                        <span class="ppt-card-index">A</span>
+                                        <span class="ppt-card-en">English Example</span>
+                                    </div>
+                                    <h3 class="ppt-card-title">"Hello, world!" ≈ 3 tokens</h3>
+                                    <ul class="ppt-card-list slide-token__token-list">
+                                        <li><strong>Hello</strong> = 1 token</li>
+                                        <li><strong>,</strong> = 1 token</li>
+                                        <li><strong>world</strong> = 1 token</li>
+                                        <li><strong>!</strong> 可能与前面的内容合并，具体取决于分词器</li>
+                                    </ul>
+                                </article>
+
+                                <article class="ppt-card ppt-animate-in ppt-delay-4 slide-token__example-card">
+                                    <div class="ppt-card-topline">
+                                        <span class="ppt-card-index">B</span>
+                                        <span class="ppt-card-en">Chinese Example</span>
+                                    </div>
+                                    <h3 class="ppt-card-title">"你好，世界！" ≈ 6-8 tokens</h3>
+                                    <ul class="ppt-card-list slide-token__token-list">
+                                        <li>中文字符通常会被切成 1-2 个 token</li>
+                                        <li>标点符号也会单独计入 token</li>
+                                        <li>句子越长，token 数增长越快</li>
+                                    </ul>
+                                </article>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="ppt-conclusion-bar slide-token__conclusion">理解 token，是后面理解 API Key、Provider 路由、配额和成本分析的基础。</div>
+                </section>
+
+                <section class="slide ppt-slide-shell ppt-theme-purple slide-provider" id="slide-7" data-title="Provider管理">
+                    <div class="ppt-bg-grid"></div>
+                    <div class="ppt-bg-glow"></div>
+                    <div class="ppt-bg-ribbon"></div>
+
+                    <div class="ppt-page-header ppt-safe-watermark slide-provider__header">
+                        <h2 class="ppt-page-title">供应商管理</h2>
+                        <p class="ppt-page-subtitle">Provider是上游模型服务的配置资源，用来统一接入不同的 AI 模型供应商、认证方式和接口协议，把“接模型”变成“管上游”。</p>
+                    </div>
+
+                    <div class="ppt-layout-two-col slide-provider__layout">
+                        <article class="ppt-panel ppt-animate-in ppt-delay-1 slide-provider__panel slide-provider__panel-primary">
+                            <div class="ppt-panel-head">
+                                <h3 class="ppt-panel-title">Provider能力</h3>
+                                <p class="ppt-panel-desc">平台把供应商差异封装成标准化配置，只需要管理 Provider 级别的能力、成本、可用性和访问边界。</p>
+                            </div>
+
+                            <div class="slide-provider__flow">
+                                <article class="ppt-card slide-provider__flow-card slide-provider__flow-card-source">
+                                    <div class="ppt-card-topline">
+                                        <span class="ppt-card-index">A</span>
+                                        <span class="ppt-card-en">Upstream Source</span>
+                                    </div>
+                                    <h3 class="ppt-card-title">模型供应商</h3>
+                                    <p class="ppt-card-desc">OpenAI、Claude、Qwen、Doubao、Gemini、Kimi，或企业自建模型服务。</p>
+                                </article>
+
+                                <div class="slide-provider__flow-bridge">
+                                    <span></span>
+                                    <strong>Provider</strong>
+                                    <span></span>
+                                </div>
+
+                                <article class="ppt-card slide-provider__flow-card slide-provider__flow-card-target">
+                                    <div class="ppt-card-topline">
+                                        <span class="ppt-card-index">B</span>
+                                        <span class="ppt-card-en">Unified Control</span>
+                                    </div>
+                                    <h3 class="ppt-card-title">路由 / Key / 业务空间</h3>
+                                    <p class="ppt-card-desc">Router、API Key 和业务空间都以 Provider 为基础进行治理与调度。</p>
+                                </article>
+                            </div>
+
+                            <div class="slide-provider__upstream-grid">
+                                <article class="ppt-card slide-provider__upstream-card slide-provider__upstream-card-blue">
+                                    <div class="ppt-card-topline">
+                                        <span class="ppt-card-index">1</span>
+                                        <span class="ppt-card-en">Global Models</span>
+                                    </div>
+                                    <h3 class="ppt-card-title">海外模型</h3>
+                                    <p class="ppt-card-desc">OpenAI、Claude 等覆盖英文、代码推理能力的通用 API 生态，适合国际主流场景。</p>
+                                </article>
+
+                                <article class="ppt-card slide-provider__upstream-card slide-provider__upstream-card-green">
+                                    <div class="ppt-card-topline">
+                                        <span class="ppt-card-index">2</span>
+                                        <span class="ppt-card-en">China Models</span>
+                                    </div>
+                                    <h3 class="ppt-card-title">国产模型</h3>
+                                    <p class="ppt-card-desc">兼顾千问、豆包、百度等中文体验、成本控制和本地化接入，适合国内业务部署。</p>
+                                </article>
+
+                                <article class="ppt-card slide-provider__upstream-card slide-provider__upstream-card-purple">
+                                    <div class="ppt-card-topline">
+                                        <span class="ppt-card-index">3</span>
+                                        <span class="ppt-card-en">Multimodal</span>
+                                    </div>
+                                    <h3 class="ppt-card-title">多模态模型</h3>
+                                    <p class="ppt-card-desc">适配VLA，强调长上下文、多模态理解与复杂输入处理，适合知识密集场景。</p>
+                                </article>
+
+                                <article class="ppt-card slide-provider__upstream-card slide-provider__upstream-card-amber">
+                                    <div class="ppt-card-topline">
+                                        <span class="ppt-card-index">4</span>
+                                        <span class="ppt-card-en">Private Endpoint</span>
+                                    </div>
+                                    <h3 class="ppt-card-title">私有化 / 自建模型</h3>
+                                    <p class="ppt-card-desc">统一纳入 Provider 管理，支持专属 endpoint、企业内网和定制协议。</p>
+                                </article>
+                            </div>
+                        </article>
+
+                        <article class="ppt-panel ppt-animate-in ppt-delay-2 slide-provider__panel slide-provider__panel-side">
+                            <div class="ppt-panel-head">
+                                <h3 class="ppt-panel-title">Provider管理</h3>
+                                <p class="ppt-panel-desc">Provider 不是简单的连接配置，而是把上游模型资源纳入统一治理、统一监控和统一调度的入口。</p>
+                            </div>
+
+                            <div class="slide-provider__value-list">
+                                <article class="ppt-card ppt-card-capability slide-provider__value-card">
+                                    <div class="ppt-card-topline">
+                                        <span class="ppt-card-index">01</span>
+                                        <span class="ppt-card-en">Custom Setup</span>
+                                    </div>
+                                    <h3 class="ppt-card-title">自定义配置</h3>
+                                    <ul class="ppt-card-list">
+                                        <li>在业务空间中使用自己的 API Key 和服务端点。</li>
+                                        <li>可以按业务线配置不同模型和不同成本策略。</li>
+                                        <li>把上游接入与下游使用完全解耦。</li>
+                                    </ul>
+                                </article>
+
+                                <article class="ppt-card ppt-card-capability slide-provider__value-card">
+                                    <div class="ppt-card-topline">
+                                        <span class="ppt-card-index">02</span>
+                                        <span class="ppt-card-en">Multi Provider</span>
+                                    </div>
+                                    <h3 class="ppt-card-title">多提供商管理</h3>
+                                    <ul class="ppt-card-list">
+                                        <li>统一管理多个 Provider，集中维护 API Key、协议和 endpoint。</li>
+                                        <li>便于切换、对比、灰度和统一统计。</li>
+                                        <li>支持按模型能力和成本做资源分层。</li>
+                                    </ul>
+                                </article>
+
+                                <article class="ppt-card ppt-card-capability slide-provider__value-card slide-provider__value-card-compact">
+                                    <div class="ppt-card-topline">
+                                        <span class="ppt-card-index">03</span>
+                                        <span class="ppt-card-en">Resilience</span>
+                                    </div>
+                                    <h3 class="ppt-card-title">负载均衡与故障转移</h3>
+                                    <ul class="ppt-card-list">
+                                        <li>配置多个 Provider 自动分配请求，提升吞吐和稳定性。</li>
+                                        <li>主 Provider 不可用时自动切换到备用供应商。</li>
+                                    </ul>
+                                </article>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="ppt-conclusion-bar slide-provider__conclusion">Provider 是网关治理上游模型的第一层抽象，也是 Router、API Key、计费与安全管理的前置基础。</div>
+                </section>
+
+                <section class="slide ppt-slide-shell ppt-theme-purple slide-provider-business" id="slide-8" data-title="Provider商业">
+                    <div class="ppt-bg-grid"></div>
+                    <div class="ppt-bg-glow"></div>
+                    <div class="ppt-bg-ribbon"></div>
+
+                    <div class="ppt-page-header ppt-safe-watermark slide-provider-business__header">
+                        <h2 class="ppt-page-title">供应商封装</h2>
+                        <p class="ppt-page-subtitle">把上游模型能力封装成可售卖、可计量、可复用的资源单元，让技术接入、产品定价和运营增长联动起来。</p>
+                    </div>
+
+                    <div class="slide-provider-business__layout slide-provider-business__layout-single">
+                        <article class="ppt-panel ppt-animate-in ppt-delay-2 slide-provider-business__panel slide-provider-business__panel-side">
+                            <div class="ppt-panel-head">
+                                <h3 class="ppt-panel-title">第三方生态</h3>
+                                <p class="ppt-panel-desc">主流模型品牌已经具备清晰的商业分层，适合被包装成不同 SKU 和协议层级。</p>
+                            </div>
+
+                            <div class="slide-provider-business__brand-grid">
+                                <article class="slide-provider-business__brand-card slide-provider-business__brand-card-openai">
+                                    <div class="slide-provider-business__brand-logo">
+                                        <img src="assets/images/provider-logos-webp/openai.webp" alt="OpenAI">
+                                    </div>
+                                    <div class="slide-provider-business__brand-copy">
+                                        <h4>OpenAI</h4>
+                                        <p>旗舰能力与成熟生态，适合作为高价值标准 SKU。</p>
+                                    </div>
+                                </article>
+
+                                <article class="slide-provider-business__brand-card slide-provider-business__brand-card-anthropic">
+                                    <div class="slide-provider-business__brand-logo">
+                                        <img src="assets/images/provider-logos-webp/anthropic.webp" alt="Anthropic">
+                                    </div>
+                                    <div class="slide-provider-business__brand-copy">
+                                        <h4>Anthropic</h4>
+                                        <p>推理和安全调性明显，适合高要求业务线。</p>
+                                    </div>
+                                </article>
+
+                                <article class="slide-provider-business__brand-card slide-provider-business__brand-card-google">
+                                    <div class="slide-provider-business__brand-logo">
+                                        <img src="assets/images/provider-logos-webp/google.webp" alt="Google Gemini">
+                                    </div>
+                                    <div class="slide-provider-business__brand-copy">
+                                        <h4>Google Gemini</h4>
+                                        <p>多模态与长上下文能力突出，适合复杂输入场景。</p>
+                                    </div>
+                                </article>
+
+                                <article class="slide-provider-business__brand-card slide-provider-business__brand-card-qwen">
+                                    <div class="slide-provider-business__brand-logo">
+                                        <img src="assets/images/provider-logos-webp/qwen.webp" alt="Qwen">
+                                    </div>
+                                    <div class="slide-provider-business__brand-copy">
+                                        <h4>阿里 千问</h4>
+                                        <p>中文体验和本地化部署友好，适合国内业务产品化。</p>
+                                    </div>
+                                </article>
+
+                                <article class="slide-provider-business__brand-card slide-provider-business__brand-card-minimax">
+                                    <div class="slide-provider-business__brand-logo">
+                                        <img src="assets/images/provider-logos-webp/minimax.webp" alt="MiniMax">
+                                    </div>
+                                    <div class="slide-provider-business__brand-copy">
+                                        <h4>MiniMax</h4>
+                                        <p>支持多模态与长文本场景，适合对话与内容生成业务。</p>
+                                    </div>
+                                </article>
+
+                                <article class="slide-provider-business__brand-card slide-provider-business__brand-card-doubao">
+                                    <div class="slide-provider-business__brand-logo">
+                                        <img src="assets/images/provider-logos-webp/doubao.webp" alt="Doubao">
+                                    </div>
+                                    <div class="slide-provider-business__brand-copy">
+                                        <h4>火山引擎 豆包</h4>
+                                        <p>面向中文业务和应用落地，适合按场景打包售卖。</p>
+                                    </div>
+                                </article>
+
+                                <article class="slide-provider-business__brand-card slide-provider-business__brand-card-kimi">
+                                    <div class="slide-provider-business__brand-logo">
+                                        <img src="assets/images/provider-logos-webp/kimi.webp" alt="Kimi">
+                                    </div>
+                                    <div class="slide-provider-business__brand-copy">
+                                        <h4>月之暗面 Kimi</h4>
+                                        <p>超长上下文和知识密集场景友好，适合深度阅读产品。</p>
+                                    </div>
+                                </article>
+
+                                <article class="slide-provider-business__brand-card slide-provider-business__brand-card-baidu">
+                                    <div class="slide-provider-business__brand-logo">
+                                        <img src="assets/images/provider-logos-webp/baidu-qianfan.webp" alt="百度千帆">
+                                    </div>
+                                    <div class="slide-provider-business__brand-copy">
+                                        <h4>百度千帆</h4>
+                                        <p>百度智能云生态入口，适合国内企业级集成。</p>
+                                    </div>
+                                </article>
+
+                                <article class="slide-provider-business__brand-card slide-provider-business__brand-card-zhipu">
+                                    <div class="slide-provider-business__brand-logo">
+                                        <img src="assets/images/provider-logos-webp/zhipu.webp" alt="智谱">
+                                    </div>
+                                    <div class="slide-provider-business__brand-copy">
+                                        <h4>智谱</h4>
+                                        <p>面向国内通用模型和 Agent 场景的核心供给。</p>
+                                    </div>
+                                </article>
+
+                                <article class="slide-provider-business__brand-card slide-provider-business__brand-card-siliconflow">
+                                    <div class="slide-provider-business__brand-logo">
+                                        <img src="assets/images/provider-logos-webp/siliconflow.webp" alt="硅基流动">
+                                    </div>
+                                    <div class="slide-provider-business__brand-copy">
+                                        <h4>硅基流动</h4>
+                                        <p>聚合与分发模型能力，适合做统一接入层。</p>
+                                    </div>
+                                </article>
+
+                                <article class="slide-provider-business__brand-card slide-provider-business__brand-card-openrouter">
+                                    <div class="slide-provider-business__brand-logo">
+                                        <img src="assets/images/provider-logos-webp/openrouter.webp" alt="OpenRouter">
+                                    </div>
+                                    <div class="slide-provider-business__brand-copy">
+                                        <h4>OpenRouter</h4>
+                                        <p>多模型路由与聚合分发，适合跨供应商接入。</p>
+                                    </div>
+                                </article>
+
+                                <article class="slide-provider-business__brand-card slide-provider-business__brand-card-custom-channel">
+                                    <div class="slide-provider-business__brand-logo">
+                                        <img src="assets/images/webp/logo-placeholder.webp" alt="自定义渠道">
+                                    </div>
+                                    <div class="slide-provider-business__brand-copy">
+                                        <h4>自定义渠道</h4>
+                                        <p>面向企业私有供应链和专属接入方式，支持自建模型与独立分发。</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="slide-provider-business__flow slide-provider-business__flow-outside">
+                        <article class="ppt-card ppt-card-capability slide-provider-business__step-card slide-provider-business__step-card-accent-1">
+                            <div class="ppt-card-topline">
+                                <span class="ppt-card-index">01</span>
+                                <span class="ppt-card-en">Procure</span>
+                            </div>
+                            <h3 class="ppt-card-title">采购上游资源</h3>
+                            <ul class="ppt-card-list">
+                                <li>统一采购模型额度、API Key 和专线访问能力。</li>
+                                <li>把外部成本转成可控的内部资源池。</li>
+                            </ul>
+                        </article>
+
+                        <article class="ppt-card ppt-card-capability slide-provider-business__step-card slide-provider-business__step-card-accent-2">
+                            <div class="ppt-card-topline">
+                                <span class="ppt-card-index">02</span>
+                                <span class="ppt-card-en">Package</span>
+                            </div>
+                            <h3 class="ppt-card-title">包装成 Provider SKU</h3>
+                            <ul class="ppt-card-list">
+                                <li>按模型、协议、区域和 SLA 形成可售卖单元。</li>
+                                <li>支持专业版、旗舰版定价。</li>
+                            </ul>
+                        </article>
+
+                        <article class="ppt-card ppt-card-capability slide-provider-business__step-card slide-provider-business__step-card-accent-3">
+                            <div class="ppt-card-topline">
+                                <span class="ppt-card-index">03</span>
+                                <span class="ppt-card-en">Bundle</span>
+                            </div>
+                            <h3 class="ppt-card-title">叠加业务空间</h3>
+                            <ul class="ppt-card-list">
+                                <li>与业务空间、API Key、Router 组合成场景套餐。</li>
+                                <li>把调用能力和业务权限绑定在一起售卖。</li>
+                            </ul>
+                        </article>
+
+                        <article class="ppt-card ppt-card-capability slide-provider-business__step-card slide-provider-business__step-card-accent-4">
+                            <div class="ppt-card-topline">
+                                <span class="ppt-card-index">04</span>
+                                <span class="ppt-card-en">Bill</span>
+                            </div>
+                            <h3 class="ppt-card-title">计量与分润</h3>
+                            <ul class="ppt-card-list">
+                                <li>按 Token、模型、组织和场景精细计费。</li>
+                                <li>支持订阅、按量、分润和私有化交付模式。</li>
+                            </ul>
+                        </article>
+                    </div>
+
+                    <div class="ppt-conclusion-bar slide-provider-business__conclusion">Provider 的价值不只是接入能力，而是把模型能力变成可售卖、可计量、可持续运营的标准化产品。</div>
+                </section>
+
+                <section class="slide ppt-slide-shell ppt-theme-blue slide-router" id="slide-9" data-title="路由管理">
+                    <div class="ppt-bg-grid"></div>
+                    <div class="ppt-bg-glow"></div>
+                    <div class="ppt-bg-orbit"></div>
+
+                    <div class="ppt-page-header ppt-safe-watermark slide-router__header">
+                        <h2 class="ppt-page-title">路由管理</h2>
+                        <p class="ppt-page-subtitle">Router是运营平台中的核心资源，负责定义请求如何匹配和转发到不同的上游提供商，把“流量怎么走”变成可配置、可观测的治理能力</p>
+                    </div>
+
+                    <div class="slide-router__stage">
+                        <svg class="slide-router__network" aria-hidden="true"></svg>
+
+                        <div class="slide-router__column slide-router__column-left" data-router-anchor="client">
+                            <div class="slide-router__section-tag">Client Side</div>
+                            <h3 class="slide-router__column-title">用户客户端</h3>
+                            <p class="slide-router__column-desc">多种终端和业务入口统一接入 Router，所有请求先汇聚，再按策略分发到合适的上游。</p>
+
+                            <article class="ppt-card ppt-surface-blue ppt-accent-blue ppt-animate-in ppt-delay-1 slide-router__side-card slide-router__connector-left">
+                                <div class="slide-router__side-badge">APP</div>
+                                <div class="slide-router__side-copy">
+                                    <h4>应用与 Agent</h4>
+                                    <p>企业应用、AI Agent 和工作流系统统一通过网关发起请求。</p>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="slide-router__center">
+                            <div class="slide-router__halo slide-router__halo-lg"></div>
+                            <div class="slide-router__halo slide-router__halo-md"></div>
+                            <div class="slide-router__halo slide-router__halo-sm"></div>
+
+                            <div class="slide-router__router ppt-animate-in ppt-delay-2">
+                                <div class="slide-router__router-inner">
+                                    <span>Unified Routing Core</span>
+                                    <h3>Router</h3>
+                                    <div class="slide-router__router-notes">
+                                        <article class="slide-router__router-note slide-router__router-note-rule">
+                                            <strong>请求匹配规则</strong>
+                                            <p>URI / 模型 / Header / Method / 区域</p>
+                                        </article>
+                                        <article class="slide-router__router-note slide-router__router-note-control">
+                                            <strong>控制条件</strong>
+                                            <p>限流 / 权限 / 回退 / 重试 / 白名单</p>
+                                        </article>
+                                    </div>
+                                    <p>智能路由中枢</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide-router__column slide-router__column-right" data-router-anchor="upstream">
+                            <div class="slide-router__section-tag">Upstream</div>
+                            <h3 class="slide-router__column-title">Provider上游供应商</h3>
+                            <p class="slide-router__column-desc">将请求负载均衡到多个 GPT-5.4 模型实例</p>
+
+                            <div class="slide-router__upstream-list">
+                                <article class="ppt-card ppt-surface-blue ppt-accent-blue ppt-animate-in ppt-delay-1 slide-router__side-card slide-router__upstream-card slide-router__upstream-card--alert slide-router__connector-right" data-router-provider="openai-1">
+                                    <div class="slide-router__card-logo">
+                                        <img src="assets/images/provider-logos-webp/openai.webp" alt="OpenAI">
+                                    </div>
+                                    <div class="slide-router__side-copy">
+                                        <div class="slide-router__card-head">
+                                            <h4>OpenAI 官方渠道</h4>
+                                            <span class="slide-router__weight-badge">100</span>
+                                        </div>
+                                        <div class="slide-router__tag-group">
+                                            <span class="ppt-tag ppt-tag-strong">GPT-5.4</span>
+                                            <span class="ppt-tag">GPT-5.4 Mini</span>
+                                            <span class="ppt-tag">GPT-5.3 Codex</span>
+                                            <span class="ppt-tag">GPT-5 系列</span>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="ppt-card ppt-surface-blue ppt-accent-blue ppt-animate-in ppt-delay-2 slide-router__side-card slide-router__upstream-card slide-router__upstream-card--ok slide-router__connector-right" data-router-provider="openai-2">
+                                    <div class="slide-router__card-logo">
+                                        <img src="assets/images/provider-logos-webp/openai.webp" alt="OpenAI">
+                                    </div>
+                                    <div class="slide-router__side-copy">
+                                        <div class="slide-router__card-head">
+                                            <h4>OpenAI 官方渠道</h4>
+                                            <span class="slide-router__weight-badge">90</span>
+                                        </div>
+                                        <div class="slide-router__tag-group">
+                                            <span class="ppt-tag ppt-tag-strong">GPT-5.4</span>
+                                            <span class="ppt-tag">GPT-5.4 Mini</span>
+                                            <span class="ppt-tag">GPT-5.3 Codex</span>
+                                            <span class="ppt-tag">GPT-5 系列</span>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="ppt-card ppt-surface-blue ppt-accent-blue ppt-animate-in ppt-delay-3 slide-router__side-card slide-router__upstream-card slide-router__upstream-card--ok slide-router__connector-right" data-router-provider="openrouter">
+                                    <div class="slide-router__card-logo">
+                                        <img src="assets/images/provider-logos-webp/openrouter.webp" alt="OpenRouter">
+                                    </div>
+                                    <div class="slide-router__side-copy">
+                                        <div class="slide-router__card-head">
+                                            <h4>OpenRouter 渠道</h4>
+                                            <span class="slide-router__weight-badge">50</span>
+                                        </div>
+                                        <div class="slide-router__tag-group">
+                                            <span class="ppt-tag ppt-tag-strong">GPT-5.4</span>
+                                            <span class="ppt-tag">GPT-5.4 Mini</span>
+                                            <span class="ppt-tag">GPT-5.3 Codex</span>
+                                            <span class="ppt-tag">GPT-5 系列</span>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="ppt-card ppt-surface-blue ppt-accent-blue ppt-animate-in ppt-delay-4 slide-router__side-card slide-router__upstream-card slide-router__upstream-card--ok slide-router__connector-right" data-router-provider="custom">
+                                    <div class="slide-router__card-logo">
+                                        <img src="assets/images/webp/logo-placeholder.webp" alt="自定义渠道">
+                                    </div>
+                                    <div class="slide-router__side-copy">
+                                        <div class="slide-router__card-head">
+                                            <h4>自定义渠道</h4>
+                                            <span class="slide-router__weight-badge">50</span>
+                                        </div>
+                                        <div class="slide-router__tag-group">
+                                            <span class="ppt-tag ppt-tag-strong">GPT-5.4</span>
+                                            <span class="ppt-tag">GPT-5.4 Mini</span>
+                                            <span class="ppt-tag">GPT-5.3 Codex</span>
+                                            <span class="ppt-tag">GPT-5 系列</span>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide-router__capabilities">
+                        <article class="ppt-card ppt-card-capability ppt-animate-in ppt-delay-1 slide-router__cap-card">
+                            <div class="ppt-card-topline">
+                                <span class="ppt-card-index">01</span>
+                                <span class="ppt-card-en">Load Balancing</span>
+                            </div>
+                            <h3 class="ppt-card-title">负载均衡</h3>
+                            <p class="slide-router__cap-desc">自动分配请求到多个上游供应商，提升吞吐量和可用性。</p>
+                        </article>
+
+                        <article class="ppt-card ppt-card-capability ppt-animate-in ppt-delay-2 slide-router__cap-card">
+                            <div class="ppt-card-topline">
+                                <span class="ppt-card-index">02</span>
+                                <span class="ppt-card-en">Failover</span>
+                            </div>
+                            <h3 class="ppt-card-title">故障转移</h3>
+                            <p class="slide-router__cap-desc">主供应商不可用时自动切换到备用供应商，降低单点故障影响。</p>
+                        </article>
+
+                        <article class="ppt-card ppt-card-capability ppt-animate-in ppt-delay-3 slide-router__cap-card">
+                            <div class="ppt-card-topline">
+                                <span class="ppt-card-index">03</span>
+                                <span class="ppt-card-en">Advanced Config</span>
+                            </div>
+                            <h3 class="ppt-card-title">高级配置</h3>
+                            <p class="slide-router__cap-desc">支持超时控制、重试机制、认证控制和模型映射。</p>
+                        </article>
+
+                        <article class="ppt-card ppt-card-capability ppt-animate-in ppt-delay-4 slide-router__cap-card">
+                            <div class="ppt-card-topline">
+                                <span class="ppt-card-index">04</span>
+                                <span class="ppt-card-en">Governance</span>
+                            </div>
+                            <h3 class="ppt-card-title">策略治理</h3>
+                            <p class="slide-router__cap-desc">让路由策略和企业安全边界一起生效，统一收口流量治理能力。</p>
+                        </article>
+                    </div>
+
+                </section>
+
+                <section class="slide ppt-slide-shell ppt-theme-blue slide-router-usage" id="slide-10" data-title="Router使用场景">
+                    <div class="ppt-bg-grid"></div>
+                    <div class="ppt-bg-glow"></div>
+
+                    <div class="ppt-page-header ppt-safe-watermark slide-router-usage__header">
+                        <h2 class="ppt-page-title">路由使用场景</h2>
+                        <p class="ppt-page-subtitle">Router的真正价值，不是把请求转发出去，而是把效果、成本、稳定性和隔离性沉淀成一套可持续演进的流量策略。</p>
+                    </div>
+
+                    <div class="slide-router-usage__top">
+                        <article class="ppt-panel ppt-animate-in ppt-delay-1 slide-router-usage__overview">
+                            <div class="ppt-panel-head">
+                                <h3 class="ppt-panel-title">企业最终都会用到路由能力</h3>
+                                <p class="ppt-panel-desc">当模型供应商、账号、环境和业务线同时增加后，流量已经不是“转发逻辑”，而是一层经营能力。</p>
+                            </div>
+
+                            <div class="slide-router-usage__goal-grid">
+                                <div class="slide-router-usage__goal-card">
+                                    <span>统一入口</span>
+                                    <strong>多模型接入不改业务代码</strong>
+                                </div>
+                                <div class="slide-router-usage__goal-card">
+                                    <span>灰度升级</span>
+                                    <strong>新模型上线可观测、可回滚</strong>
+                                </div>
+                                <div class="slide-router-usage__goal-card">
+                                    <span>环境隔离</span>
+                                    <strong>开发、测试、生产边界清晰</strong>
+                                </div>
+                                <div class="slide-router-usage__goal-card">
+                                    <span>成本与稳定</span>
+                                    <strong>高性价比运行并具备兜底能力</strong>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="slide-router-usage__grid">
+                        <article class="ppt-card ppt-card-capability ppt-animate-in ppt-delay-1 slide-router-usage__scenario slide-router-usage__scenario-primary">
+                            <div class="ppt-card-topline">
+                                <span class="ppt-card-index">01</span>
+                                <span class="ppt-card-en">Multi-Model Dispatch</span>
+                            </div>
+                            <h3 class="ppt-card-title">多模型统一入口</h3>
+                            <p class="slide-router-usage__scenario-desc">业务系统只对接一个 Endpoint，底层由 Router 自动分发到 OpenAI、Anthropic、DeepSeek 或私有模型集群。</p>
+                            <ul class="ppt-card-list slide-router-usage__list">
+                                <li>前台应用与 Agent 不需要感知供应商差异</li>
+                                <li>不同模型家族走不同 Provider，接入逻辑平台化收口</li>
+                            </ul>
+                            <div class="slide-router-usage__scenario-tag">适合：模型种类多、接入系统多的企业</div>
+                        </article>
+
+                        <article class="ppt-card ppt-card-capability ppt-animate-in ppt-delay-2 slide-router-usage__scenario slide-router-usage__scenario-accent">
+                            <div class="ppt-card-topline">
+                                <span class="ppt-card-index">02</span>
+                                <span class="ppt-card-en">Canary &amp; A/B Test</span>
+                            </div>
+                            <h3 class="ppt-card-title">灰度发布与 A/B 测试</h3>
+                            <p class="slide-router-usage__scenario-desc">把 5% 到 10% 的流量导向新模型、新 Prompt 或新渠道，在真实业务流量下验证效果、延迟和成本。</p>
+                            <ul class="ppt-card-list slide-router-usage__list">
+                                <li>支持按 Header、用户组、API Key、Workspace 切流</li>
+                                <li>异常可快速回滚，避免一次性全量切换风险</li>
+                            </ul>
+                            <div class="slide-router-usage__scenario-tag">适合：模型升级频繁、需稳态演进的团队</div>
+                        </article>
+
+                        <article class="ppt-card ppt-card-capability ppt-animate-in ppt-delay-3 slide-router-usage__scenario slide-router-usage__scenario-soft">
+                            <div class="ppt-card-topline">
+                                <span class="ppt-card-index">03</span>
+                                <span class="ppt-card-en">Tenant Isolation</span>
+                            </div>
+                            <h3 class="ppt-card-title">多环境与租户隔离</h3>
+                            <p class="slide-router-usage__scenario-desc">开发、测试、生产使用不同 Provider 组合和配额策略，不同业务空间也可绑定独立路由边界。</p>
+                            <ul class="ppt-card-list slide-router-usage__list">
+                                <li>测试流量不污染生产链路，也不干扰生产账单</li>
+                                <li>便于按业务线、客户、项目做资源和权限拆分</li>
+                            </ul>
+                            <div class="slide-router-usage__scenario-tag">适合：多部门、多项目、多租户运营场景</div>
+                        </article>
+
+                        <article class="ppt-card ppt-card-capability ppt-animate-in ppt-delay-4 slide-router-usage__scenario slide-router-usage__scenario-success">
+                            <div class="ppt-card-topline">
+                                <span class="ppt-card-index">04</span>
+                                <span class="ppt-card-en">Cost &amp; Resilience</span>
+                            </div>
+                            <h3 class="ppt-card-title">成本优化与高可用兜底</h3>
+                            <p class="slide-router-usage__scenario-desc">常规请求优先走高性价比模型，复杂任务走高阶模型；当主链路异常时自动回退到备用渠道。</p>
+                            <ul class="ppt-card-list slide-router-usage__list">
+                                <li>把模型调用从“只追求最好”变成“按场景选择最优”</li>
+                                <li>在峰值、限流和故障时维持整体可用性</li>
+                            </ul>
+                            <div class="slide-router-usage__scenario-tag">适合：生产高并发、成本敏感或强 SLA 场景</div>
+                        </article>
+                    </div>
+
+                    <div class="ppt-conclusion-bar slide-router-usage__conclusion">企业把流量策略从代码细节提升为平台能力，从而持续平衡模型效果、交付稳定性和运营成本。</div>
+                </section>
+
+                <section class="slide ppt-slide-shell ppt-theme-neutral slide-workspace" id="slide-11" data-title="业务空间管理">
+                    <div class="ppt-bg-grid"></div>
+                    <div class="ppt-bg-glow"></div>
+
+                    <div class="ppt-page-header ppt-safe-watermark slide-workspace__header">
+                        <h2 class="ppt-page-title">业务空间管理</h2>
+                        <p class="ppt-page-subtitle">Workspace 可以理解为一个独立业务单元：从访问入口到路由、上游资源、权限计量，都在同一条治理边界内闭环。</p>
+                    </div>
+
+                    <div class="slide-workspace__canvas">
+                        <div class="slide-workspace__entry ppt-animate-in ppt-delay-1">
+                            <div class="slide-workspace__entry-tag">业务入口</div>
+                            <div class="slide-workspace__entry-stack">
+                                <div class="slide-workspace__entry-card">
+                                    <strong>应用 / Agent / Bot</strong>
+                                    <span>统一调用同一个业务空间</span>
+                                </div>
+                                <div class="slide-workspace__entry-card">
+                                    <strong>API Key / 用户组</strong>
+                                    <span>先决定谁能访问、能访问什么</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide-workspace__bridge slide-workspace__bridge-entry" aria-hidden="true"></div>
+
+                        <div class="slide-workspace__space ppt-animate-in ppt-delay-2">
+                            <div class="slide-workspace__space-label">Workspace 边界</div>
+
+                            <div class="slide-workspace__flow">
+                                <div class="slide-workspace__node slide-workspace__node-endpoint">
+                                    <div class="slide-workspace__node-top">01 Endpoint</div>
+                                    <h3>独立访问入口</h3>
+                                    <p>每个空间拥有自己的域名或独立接入点，天然形成环境与租户边界。</p>
+                                </div>
+
+                                <div class="slide-workspace__bridge" aria-hidden="true"></div>
+
+                                <div class="slide-workspace__node slide-workspace__node-router">
+                                    <div class="slide-workspace__node-top">02 Router</div>
+                                    <h3>独立路由策略</h3>
+                                    <p>按模型、Header、环境、客户做路由，把灰度、回退和隔离都落到空间内。</p>
+                                </div>
+
+                                <div class="slide-workspace__bridge" aria-hidden="true"></div>
+
+                                <div class="slide-workspace__node slide-workspace__node-provider">
+                                    <div class="slide-workspace__node-top">03 Provider</div>
+                                    <h3>独立上游供应商</h3>
+                                    <p>一个空间绑定自己可见的模型、渠道和 API Key，不与其他空间混用。</p>
+                                </div>
+                            </div>
+
+                            <div class="slide-workspace__cap-grid">
+                                <div class="slide-workspace__cap-card">
+                                    <span>权限控制</span>
+                                    <strong>用户组、API Key、资源授权按空间生效</strong>
+                                </div>
+                                <div class="slide-workspace__cap-card">
+                                    <span>成本管理</span>
+                                    <strong>Token、模型成本、账单口径按空间归集</strong>
+                                </div>
+                                <div class="slide-workspace__cap-card">
+                                    <span>环境隔离</span>
+                                    <strong>开发、测试、生产可拆成独立业务空间</strong>
+                                </div>
+                                <div class="slide-workspace__cap-card">
+                                    <span>资源可见性</span>
+                                    <strong>默认空间开箱即用，自定义空间完全可控</strong>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide-workspace__bridge slide-workspace__bridge-exit" aria-hidden="true"></div>
+
+                        <div class="slide-workspace__result ppt-animate-in ppt-delay-3">
+                            <div class="slide-workspace__result-tag">业务结果</div>
+                            <div class="slide-workspace__result-card">
+                                <strong>多环境治理</strong>
+                                <span>生产 / 测试 / 开发边界清晰</span>
+                            </div>
+                            <div class="slide-workspace__result-card">
+                                <strong>多业务隔离</strong>
+                                <span>不同项目、客户、事业部独立运营</span>
+                            </div>
+                            <div class="slide-workspace__result-card">
+                                <strong>多租户经营</strong>
+                                <span>权限、配额、成本都能按空间管理</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ppt-conclusion-bar slide-workspace__conclusion">工作空间让企业把 AI 调用能力从“账号级使用”升级为“空间级治理”，是多环境、多业务、多租户运营的基础单元。</div>
+                </section>
+
+                <section class="slide ppt-slide-shell ppt-theme-blue slide-consumer" id="slide-12" data-title="用户组管理与使用场景">
+                    <div class="ppt-bg-grid"></div>
+                    <div class="ppt-bg-glow"></div>
+                    <div class="ppt-bg-orbit"></div>
+
+                    <div class="ppt-page-header ppt-safe-watermark slide-consumer__header">
+                        <h2 class="ppt-page-title">用户组管理</h2>
+                        <p class="ppt-page-subtitle">用户组承接“谁在使用模型能力”，把多个 API Key、权限和计量收口到同一个治理对象，再按环境、团队、项目等边界拆分管理。</p>
+                    </div>
+
+                    <div class="slide-consumer__top-grid">
+                        <article class="ppt-panel ppt-animate-in ppt-delay-1 slide-consumer__panel slide-consumer__panel-overview">
+                            <div class="ppt-panel-head">
+                                <h3 class="ppt-panel-title">用户组承接治理流程</h3>
+                                <p class="ppt-panel-desc">先定义使用主体，再收口 Key、权限和计量，最后形成清晰的责任边界。</p>
+                            </div>
+
+                            <div class="slide-consumer__flow">
+                                <div class="slide-consumer__flow-node slide-consumer__flow-node-source">
+                                    <div class="slide-consumer__entity-tag">Step 1</div>
+                                    <h4>识别使用主体</h4>
+                                    <p>先把团队、项目、系统、环境和客户这类调用主体识别出来，明确到底是谁在发起请求、谁应该被统一纳入治理范围。</p>
+                                </div>
+
+                                <div class="slide-consumer__flow-link" aria-hidden="true"></div>
+
+                                <div class="slide-consumer__flow-node slide-consumer__flow-node-center">
+                                    <div class="slide-consumer__hub-tag">Consumer</div>
+                                    <h4>统一组织、授权、归因</h4>
+                                    <ul class="ppt-card-list slide-consumer__mini-list">
+                                        <li>把同一主体下散落的多个 API Key 收口到同一个用户组</li>
+                                        <li>按用户组统一配置 Router / 模型访问范围，减少逐 Key 配置</li>
+                                        <li>按主体独立统计 Token、调用量、成本和审计记录</li>
+                                    </ul>
+                                </div>
+
+                                <div class="slide-consumer__flow-link" aria-hidden="true"></div>
+
+                                <div class="slide-consumer__flow-node slide-consumer__flow-node-result">
+                                    <div class="slide-consumer__entity-tag">Step 3</div>
+                                    <h4>形成责任边界</h4>
+                                    <p>最终把权限、Token、成本和异常行为都落到同一个责任单元里，管理者可以直接按用户组查看、追踪和调整治理策略。</p>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+
+                    <article class="ppt-panel ppt-animate-in ppt-delay-3 slide-consumer__panel slide-consumer__panel-scenarios">
+                        <div class="ppt-panel-head">
+                            <h3 class="ppt-panel-title">最典型的三类使用场景</h3>
+                            <p class="ppt-panel-desc">用户组最适合承接环境、团队、项目、客户等天然责任边界。</p>
+                        </div>
+
+                        <div class="slide-consumer__scenario-columns">
+                            <article class="slide-consumer__scenario-block slide-consumer__scenario-block-blue">
+                                <div class="slide-consumer__scenario-top">
+                                    <div class="slide-consumer__scenario-tag">案例 1</div>
+                                    <div class="slide-consumer__scenario-badge">Environment</div>
+                                </div>
+                                <h4>研发环境隔离</h4>
+                                <p>开发、测试、生产分别建立 Consumer，避免测试流量污染生产链路和账单。</p>
+                                <div class="slide-consumer__scenario-meta">
+                                    <strong>典型分组</strong>
+                                    <span>dev-web / qa-service / prod-app</span>
+                                </div>
+                            </article>
+
+                            <article class="slide-consumer__scenario-block slide-consumer__scenario-block-teal">
+                                <div class="slide-consumer__scenario-top">
+                                    <div class="slide-consumer__scenario-tag">案例 2</div>
+                                    <div class="slide-consumer__scenario-badge">Team</div>
+                                </div>
+                                <h4>跨团队协作治理</h4>
+                                <p>前端、后端、数据团队分别管理各自的调用主体、权限范围和消耗账本, 以用户组为单位进行治理和追踪。</p>
+                                <div class="slide-consumer__scenario-meta">
+                                    <strong>典型分组</strong>
+                                    <span>前端开发 / 服务调用 / 分析任务</span>
+                                </div>
+                            </article>
+
+                            <article class="slide-consumer__scenario-block slide-consumer__scenario-block-amber">
+                                <div class="slide-consumer__scenario-top">
+                                    <div class="slide-consumer__scenario-tag">案例 3</div>
+                                    <div class="slide-consumer__scenario-badge">Project</div>
+                                </div>
+                                <h4>项目 / 客户独立运营</h4>
+                                <p>项目制、多租户、客户专属场景可独立运营、计量和归因，适合商业化交付。</p>
+                                <div class="slide-consumer__scenario-meta">
+                                    <strong>典型分组</strong>
+                                    <span>项目 A Router / 客户专属 Key / 专属口径</span>
+                                </div>
+                            </article>
+                        </div>
+                    </article>
+
+                    <div class="ppt-conclusion-bar slide-consumer__conclusion">Consumer 把零散 API Key 升级为清晰的使用主体，适合承接环境、团队、项目和客户等责任边界。</div>
+                </section>
+
+                <section class="slide ppt-slide-shell ppt-theme-neutral slide-billing" id="slide-13" data-title="计费管理">
+                    <div class="ppt-bg-grid"></div>
+                    <div class="ppt-bg-glow"></div>
+                    <div class="ppt-bg-orbit"></div>
+
+                    <div class="ppt-page-header ppt-safe-watermark slide-billing__header">
+                        <h2 class="ppt-page-title">计费管理</h2>
+                        <p class="ppt-page-subtitle">把 Token 消耗、余额扣减、充值补给和账单记录收拢到同一套积分体系里，让企业能清晰地看见“花了多少、还剩多少、为什么花”。</p>
+                    </div>
+
+                    <div class="slide-billing__layout">
+                        <article class="ppt-panel ppt-animate-in ppt-delay-1 slide-billing__panel slide-billing__panel-flow">
+                            <div class="ppt-panel-head">
+                                <h3 class="ppt-panel-title">计费链路</h3>
+                                <p class="ppt-panel-desc">一次调用如何从 Token 变成费用，再落到余额和账单。</p>
+                            </div>
+
+                            <div class="slide-billing__flow">
+                                <div class="slide-billing__flow-node slide-billing__flow-node-input">
+                                    <div class="slide-billing__flow-tag">Step 1</div>
+                                    <h4>API 调用</h4>
+                                    <p>请求进入网关后，系统先识别调用主体、模型与上下文长度，再进入计费计算链路。</p>
+                                </div>
+
+                                <div class="slide-billing__flow-link" aria-hidden="true"></div>
+
+                                <div class="slide-billing__flow-node slide-billing__flow-node-meter">
+                                    <div class="slide-billing__flow-tag slide-billing__flow-tag-amber">Step 2</div>
+                                    <h4>Token 计量</h4>
+                                    <p>输入 Token 和输出 Token 分别计价，系统按模型单价计算基础费用。</p>
+                                    <div class="slide-billing__formula">
+                                        <strong>费用 = 输入 Token × 输入单价 + 输出 Token × 输出单价</strong>
+                                    </div>
+                                </div>
+
+                                <div class="slide-billing__flow-link" aria-hidden="true"></div>
+
+                                <div class="slide-billing__flow-node slide-billing__flow-node-balance">
+                                    <div class="slide-billing__flow-tag slide-billing__flow-tag-blue">Step 3</div>
+                                    <h4>积分扣减</h4>
+                                    <p>实际费用会根据折扣率计算，最终从账户积分余额中扣减。</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="ppt-panel ppt-animate-in ppt-delay-2 slide-billing__panel slide-billing__panel-formula">
+                            <div class="ppt-panel-head">
+                                <h3 class="ppt-panel-title">计费公式</h3>
+                                <p class="ppt-panel-desc">内部将计费算法和费用示例单独展示，方便理解计量规则和最终扣减结果。</p>
+                            </div>
+
+                            <div class="slide-billing__calc">
+                                <article class="ppt-card ppt-card-capability slide-billing__calc-card slide-billing__calc-card-formula">
+                                    <div class="ppt-card-topline">
+                                        <span class="ppt-card-index">01</span>
+                                        <span class="ppt-card-en">Algorithm</span>
+                                    </div>
+                                    <h3 class="ppt-card-title">内部计费算法</h3>
+                                    <p class="slide-billing__calc-copy">平台先按输入和输出分别统计 Token，再根据对应单价计算基础费用，最后叠加折扣率得到实际扣减金额。</p>
+                                    <div class="slide-billing__calc-formula">
+                                        <strong>基础费用 = 输入 Token × 输入单价 + 输出 Token × 输出单价</strong>
+                                        <strong>实际费用 = 基础费用 × 折扣率</strong>
+                                    </div>
+                                </article>
+
+                                <article class="ppt-card ppt-card-capability slide-billing__calc-card slide-billing__calc-card-example">
+                                    <div class="ppt-card-topline">
+                                        <span class="ppt-card-index">02</span>
+                                        <span class="ppt-card-en">Example</span>
+                                    </div>
+                                    <h3 class="ppt-card-title">费用示例</h3>
+                                    <div class="slide-billing__example-grid">
+                                        <div class="slide-billing__example-row">
+                                            <span>输入 Token</span>
+                                            <strong>1500 × 0.03 / 1000 = 0.045 积分</strong>
+                                        </div>
+                                        <div class="slide-billing__example-row">
+                                            <span>输出 Token</span>
+                                            <strong>2000 × 0.06 / 1000 = 0.12 积分</strong>
+                                        </div>
+                                        <div class="slide-billing__example-row slide-billing__example-row-total">
+                                            <span>总费用</span>
+                                            <strong>0.045 + 0.12 = 0.165 积分</strong>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="slide ppt-slide-shell ppt-theme-neutral slide-pricing" id="slide-14" data-title="定价管理和统计">
+                    <div class="ppt-bg-grid"></div>
+                    <div class="ppt-bg-glow"></div>
+                    <div class="ppt-bg-ribbon"></div>
+
+                    <div class="ppt-page-header ppt-safe-watermark slide-pricing__header">
+                        <h2 class="ppt-page-title">定价管理和统计</h2>
+                        <p class="ppt-page-subtitle">页面改为左右布局：左侧展示折扣配置，右侧以更大篇幅承接四类经营统计，突出策略效果回看。</p>
+                    </div>
+
+                    <div class="slide-pricing__layout slide-pricing__layout-duo">
+                        <article class="ppt-panel ppt-animate-in ppt-delay-1 slide-pricing__panel slide-pricing__panel-discount">
+                            <div class="ppt-panel-head">
+                                <h3 class="ppt-panel-title">折扣配置</h3>
+                                <p class="ppt-panel-desc">折扣能力按“默认策略 → 租户策略 → 精细规则”逐层收口，既能统一报价，又能支持商务分层运营。</p>
+                            </div>
+
+                            <div class="slide-pricing__discount-grid slide-pricing__discount-grid-stack">
+                                <article class="slide-pricing__config-card slide-pricing__config-card-global">
+                                    <div class="slide-pricing__config-head">
+                                        <span class="slide-pricing__config-tag">全局折扣</span>
+                                        <strong>默认价格策略</strong>
+                                    </div>
+                                    <p>适用于所有用户和所有请求，是平台默认生效的基础折扣层，用于锁定统一报价口径。</p>
+                                </article>
+
+                                <article class="slide-pricing__config-card slide-pricing__config-card-tenant">
+                                    <div class="slide-pricing__config-head">
+                                        <span class="slide-pricing__config-tag">租户折扣</span>
+                                        <strong>按客户或组织定价</strong>
+                                    </div>
+                                    <p>针对重点客户、团队或项目设置差异折扣，适合商务谈判、续约激励和客户分层运营。</p>
+                                </article>
+
+                                <article class="slide-pricing__config-card slide-pricing__config-card-specific">
+                                    <div class="slide-pricing__config-head">
+                                        <span class="slide-pricing__config-tag">更具体规则</span>
+                                        <strong>优先级最高</strong>
+                                    </div>
+                                    <p>当模型、路由、租户和 API Key 规则同时命中时，优先使用最具体的配置，避免策略冲突。</p>
+                                </article>
+                            </div>
+                        </article>
+
+                        <article class="ppt-panel ppt-animate-in ppt-delay-2 slide-pricing__panel slide-pricing__panel-stats">
+                            <div class="ppt-panel-head">
+                                <h3 class="ppt-panel-title">调用统计</h3>
+                            </div>
+
+                            <div class="slide-pricing__stats-grid">
+                                <article class="slide-pricing__stats-card slide-pricing__stats-card-time" data-window-label="usage/time-trend">
+                                    <div class="slide-pricing__browser-bar">
+                                        <div class="slide-pricing__browser-actions">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="slide-pricing__stats-topline">
+                                        <span>按时间</span>
+                                        <strong>近 7 日折后消耗趋势</strong>
+                                    </div>
+                                    <div class="slide-pricing__stats-kpi">
+                                        <strong>78%</strong>
+                                        <span>消耗集中在工作日</span>
+                                    </div>
+                                    <div class="slide-pricing__stats-chart slide-pricing__stats-chart-bars">
+                                        <div class="slide-pricing__bar" style="height: 54%"><i></i><em>Mon</em></div>
+                                        <div class="slide-pricing__bar" style="height: 63%"><i></i><em>Tue</em></div>
+                                        <div class="slide-pricing__bar" style="height: 71%"><i></i><em>Wed</em></div>
+                                        <div class="slide-pricing__bar" style="height: 68%"><i></i><em>Thu</em></div>
+                                        <div class="slide-pricing__bar" style="height: 84%"><i></i><em>Fri</em></div>
+                                        <div class="slide-pricing__bar" style="height: 39%"><i></i><em>Sat</em></div>
+                                        <div class="slide-pricing__bar" style="height: 31%"><i></i><em>Sun</em></div>
+                                    </div>
+                                    <div class="slide-pricing__stats-footnote">峰值时段 16:00-18:00，日均折后扣费 12.8k Points</div>
+                                </article>
+
+                                <article class="slide-pricing__stats-card slide-pricing__stats-card-model" data-window-label="usage/model-share">
+                                    <div class="slide-pricing__browser-bar">
+                                        <div class="slide-pricing__browser-actions">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="slide-pricing__stats-topline">
+                                        <span>按模型</span>
+                                        <strong>不同模型消耗占比</strong>
+                                    </div>
+                                    <div class="slide-pricing__stats-chart slide-pricing__stats-chart-donut">
+                                        <div class="slide-pricing__donut-center">
+                                            <strong>38%</strong>
+                                            <span>DeepSeek R1</span>
+                                        </div>
+                                    </div>
+                                    <div class="slide-pricing__legend-list">
+                                        <div class="slide-pricing__legend-item">
+                                            <span class="slide-pricing__legend-dot slide-pricing__legend-dot-primary"></span>
+                                            <label>DeepSeek R1</label>
+                                            <strong>38%</strong>
+                                        </div>
+                                        <div class="slide-pricing__legend-item">
+                                            <span class="slide-pricing__legend-dot slide-pricing__legend-dot-secondary"></span>
+                                            <label>GPT-4.1 mini</label>
+                                            <strong>27%</strong>
+                                        </div>
+                                        <div class="slide-pricing__legend-item">
+                                            <span class="slide-pricing__legend-dot slide-pricing__legend-dot-tertiary"></span>
+                                            <label>Claude 3.7 Sonnet</label>
+                                            <strong>21%</strong>
+                                        </div>
+                                        <div class="slide-pricing__legend-item">
+                                            <span class="slide-pricing__legend-dot slide-pricing__legend-dot-muted"></span>
+                                            <label>Gemini 2.5 Pro</label>
+                                            <strong>14%</strong>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="slide-pricing__stats-card slide-pricing__stats-card-group" data-window-label="usage/group-breakdown">
+                                    <div class="slide-pricing__browser-bar">
+                                        <div class="slide-pricing__browser-actions">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="slide-pricing__stats-topline">
+                                        <span>按用户组</span>
+                                        <strong>团队 / 项目 / 租户差异</strong>
+                                    </div>
+                                    <div class="slide-pricing__stats-list">
+                                        <div class="slide-pricing__stats-list-item">
+                                            <div class="slide-pricing__stats-list-head">
+                                                <label>智能客服</label>
+                                                <strong>34%</strong>
+                                            </div>
+                                            <div class="slide-pricing__stats-progress"><span style="width: 34%"></span></div>
+                                        </div>
+                                        <div class="slide-pricing__stats-list-item">
+                                            <div class="slide-pricing__stats-list-head">
+                                                <label>研发助手</label>
+                                                <strong>29%</strong>
+                                            </div>
+                                            <div class="slide-pricing__stats-progress"><span style="width: 29%"></span></div>
+                                        </div>
+                                        <div class="slide-pricing__stats-list-item">
+                                            <div class="slide-pricing__stats-list-head">
+                                                <label>销售运营</label>
+                                                <strong>21%</strong>
+                                            </div>
+                                            <div class="slide-pricing__stats-progress"><span style="width: 21%"></span></div>
+                                        </div>
+                                        <div class="slide-pricing__stats-list-item">
+                                            <div class="slide-pricing__stats-list-head">
+                                                <label>知识库问答</label>
+                                                <strong>16%</strong>
+                                            </div>
+                                            <div class="slide-pricing__stats-progress"><span style="width: 16%"></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-pricing__stats-footnote">TOP2 用户组合计消耗 63%，适合重点观察折扣产出比</div>
+                                </article>
+
+                                <article class="slide-pricing__stats-card slide-pricing__stats-card-key" data-window-label="usage/api-key-ranking">
+                                    <div class="slide-pricing__browser-bar">
+                                        <div class="slide-pricing__browser-actions">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    <div class="slide-pricing__stats-topline">
+                                        <span>按 API Key</span>
+                                        <strong>定位调用主体和成本来源</strong>
+                                    </div>
+                                    <div class="slide-pricing__key-list">
+                                        <div class="slide-pricing__key-row">
+                                            <code>prod-agent-main</code>
+                                            <span>1.42M req</span>
+                                            <strong>41%</strong>
+                                        </div>
+                                        <div class="slide-pricing__key-row">
+                                            <code>support-bot-v2</code>
+                                            <span>0.91M req</span>
+                                            <strong>26%</strong>
+                                        </div>
+                                        <div class="slide-pricing__key-row">
+                                            <code>sales-copilot</code>
+                                            <span>0.66M req</span>
+                                            <strong>19%</strong>
+                                        </div>
+                                        <div class="slide-pricing__key-row">
+                                            <code>bi-analyst</code>
+                                            <span>0.49M req</span>
+                                            <strong>14%</strong>
+                                        </div>
+                                    </div>
+                                    <div class="slide-pricing__stats-footnote">前 2 个 API Key 占整体 67%，可直接映射到重点业务线路</div>
+                                </article>
+                            </div>
+                        </article>
+                    </div>
+
+                </section>
+
+                <section class="slide ppt-slide-shell ppt-theme-neutral slide-case-study slide-case-study--seres" id="slide-16" data-title="客户案例 - 塞力斯">
+                    <div class="ppt-bg-grid"></div>
+                    <div class="ppt-bg-glow"></div>
+                    <div class="ppt-bg-ribbon"></div>
+
+                    <div class="ppt-page-header ppt-safe-watermark slide-case-study__header">
+                        <h2 class="ppt-page-title">客户案例｜某汽车制造公司</h2>
+                        <p class="ppt-page-subtitle">制造业私有化部署场景下，把多品牌模型账号、同品牌多云账号和自建 GPU 模型统一收口到一个企业级 LLM API 入口</p>
+                    </div>
+
+                    <div class="slide-case-study__layout">
+                        <article class="ppt-panel ppt-animate-in ppt-delay-1 slide-case-study__profile">
+                            <div class="slide-case-study__profile-top">
+                                <span class="slide-case-study__eyebrow">Manufacturing</span>
+                                <div class="slide-case-study__brand-card">
+                                    <div class="slide-case-study__brand-mark">
+                                        <img src="assets/images/webp/enterprise-edition-logo.svg" alt="Enterprise Edition Logo">
+                                    </div>
+                                    <div>
+                                        <h3>企业版</h3>
+                                        <p>制造业客户 · 私有化服务</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slide-case-study__snapshot">
+                                <div class="slide-case-study__snapshot-item">
+                                    <span>项目目标</span>
+                                    <strong>统一模型入口与内部治理边界</strong>
+                                </div>
+                                <div class="slide-case-study__snapshot-item">
+                                    <span>核心难点</span>
+                                    <strong>公有云账号、自建模型和多业务系统并存</strong>
+                                </div>
+                                <div class="slide-case-study__snapshot-item">
+                                    <span>落地方式</span>
+                                    <strong>企业内网私有化部署</strong>
+                                </div>
+                            </div>
+
+                            <div class="slide-case-study__tag-block">
+                                <span class="slide-case-study__tag">多品牌模型</span>
+                                <span class="slide-case-study__tag">同品牌多账号</span>
+                                <span class="slide-case-study__tag">私有 GPU 模型</span>
+                                <span class="slide-case-study__tag">统一 API 入口</span>
+                                <span class="slide-case-study__tag">审计与安全治理</span>
+                            </div>
+                        </article>
+
+                        <div class="slide-case-study__content">
+                            <article class="ppt-panel ppt-animate-in ppt-delay-2 slide-case-study__headline-panel">
+                                <div class="slide-case-study__headline-tag">Case Focus</div>
+                                <h3>统一纳管公有云模型与本地私有模型</h3>
+                                <p>客户的诉求不是“多接几个模型”，而是在制造业内网环境里，把不同来源、不同账号、不同路由规则的模型能力收敛成一个可控、可审计、可持续运营的统一入口。</p>
+                            </article>
+
+                            <div class="slide-case-study__card-grid">
+                                <article class="ppt-card ppt-card-capability ppt-animate-in ppt-delay-2 slide-case-study__case-card">
+                                    <div class="ppt-card-topline">
+                                        <span class="ppt-card-index">01</span>
+                                        <span class="ppt-card-en">Pain Point</span>
+                                    </div>
+                                    <h3 class="ppt-card-title">核心问题</h3>
+                                    <ul class="ppt-card-list">
+                                        <li>多个模型品牌与多个云账号并存，入口分散、配置复杂，难以统一管理。</li>
+                                        <li>除公有云模型外，还要接入自建 GPU 集群上的私有模型，接入链路更长、运维复杂度更高。</li>
+                                        <li>各业务系统各自管理 API Key、路由和访问策略，权限、审计与安全边界容易失控。</li>
+                                    </ul>
+                                </article>
+
+                                <article class="ppt-card ppt-card-capability ppt-animate-in ppt-delay-3 slide-case-study__case-card slide-case-study__case-card-accent">
+                                    <div class="ppt-card-topline">
+                                        <span class="ppt-card-index">02</span>
+                                        <span class="ppt-card-en">Solution</span>
+                                    </div>
+                                    <h3 class="ppt-card-title">方案落点</h3>
+                                    <ul class="ppt-card-list">
+                                        <li>统一纳管企业自有模型账号、同品牌多云账号和本地私有模型，形成一体化 Provider 管理。</li>
+                                        <li>通过 Router 编排不同 Provider、模型与账号，支持负载均衡、自动回退和备用账号切换。</li>
+                                        <li>在内网环境里统一配置 API Key、用户组、IP 白名单、内容安全与审计追踪。</li>
+                                    </ul>
+                                </article>
+
+                                <article class="ppt-card ppt-card-capability ppt-animate-in ppt-delay-4 slide-case-study__case-card slide-case-study__case-card-soft">
+                                    <div class="ppt-card-topline">
+                                        <span class="ppt-card-index">03</span>
+                                        <span class="ppt-card-en">Value</span>
+                                    </div>
+                                    <h3 class="ppt-card-title">业务价值</h3>
+                                    <ul class="ppt-card-list">
+                                        <li>把多入口、多账号、多模型体系收敛成一个统一治理入口，总部管控能力显著提升。</li>
+                                        <li>通过路由调度与自动回退机制，降低限流或异常对生产连续性的影响。</li>
+                                        <li>让模型资源管理从各系统重复接入，升级为平台化、标准化的长期运营能力。</li>
+                                    </ul>
+                                </article>
+                            </div>
+
+                            <div class="slide-case-study__result-strip ppt-animate-in ppt-delay-4">
+                                <div class="slide-case-study__result-card">
+                                    <span>治理收口</span>
+                                    <strong>统一 API 入口</strong>
+                                    <p>业务系统不再直接管理上游模型账号和 Key。</p>
+                                </div>
+                                <div class="slide-case-study__result-card">
+                                    <span>稳定性</span>
+                                    <strong>多路由兜底</strong>
+                                    <p>生产峰值与上游异常场景下仍能维持调用连续性。</p>
+                                </div>
+                                <div class="slide-case-study__result-card">
+                                    <span>安全性</span>
+                                    <strong>内网审计闭环</strong>
+                                    <p>权限、内容安全与调用追踪全部沉淀在企业内网。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="slide ppt-slide-shell ppt-theme-blue slide-case-study slide-case-study--dbridge" id="slide-17" data-title="客户案例 - 鼎桥技术有限公司">
+                    <div class="ppt-bg-grid"></div>
+                    <div class="ppt-bg-glow"></div>
+                    <div class="ppt-bg-orbit"></div>
+
+                    <div class="ppt-page-header ppt-safe-watermark slide-case-study__header">
+                        <h2 class="ppt-page-title">客户案例｜某通信行业公司</h2>
+                        <p class="ppt-page-subtitle">通信行业更看重边界隔离、安全合规与问题追溯，平台的价值集中在统一治理、统一审计和统一风险控制。</p>
+                    </div>
+
+                    <div class="slide-case-study__layout">
+                        <article class="ppt-panel ppt-animate-in ppt-delay-1 slide-case-study__profile">
+                            <div class="slide-case-study__profile-top">
+                                <span class="slide-case-study__eyebrow">Telecom</span>
+                                <div class="slide-case-study__brand-card">
+                                    <div class="slide-case-study__brand-mark">
+                                        <img src="assets/images/webp/enterprise-edition-logo.svg" alt="Enterprise Edition Logo">
+                                    </div>
+                                    <div>
+                                        <h3>企业定制版</h3>
+                                        <p>通信行业 · 私有化部署和定制开发</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slide-case-study__snapshot">
+                                <div class="slide-case-study__snapshot-item">
+                                    <span>项目目标</span>
+                                    <strong>在内网前提下实现多来源模型统一纳管</strong>
+                                </div>
+                                <div class="slide-case-study__snapshot-item">
+                                    <span>核心难点</span>
+                                    <strong>安全策略一致性与跨部门治理复杂</strong>
+                                </div>
+                                <div class="slide-case-study__snapshot-item">
+                                    <span>落地方式</span>
+                                    <strong>统一入口 + 审计留痕 + 内容安全</strong>
+                                </div>
+                            </div>
+
+                            <div class="slide-case-study__tag-block">
+                                <span class="slide-case-study__tag">边界隔离</span>
+                                <span class="slide-case-study__tag">统一权限</span>
+                                <span class="slide-case-study__tag">按部门归因</span>
+                                <span class="slide-case-study__tag">内容安全过滤</span>
+                                <span class="slide-case-study__tag">可观测与追踪</span>
+                            </div>
+                        </article>
+
+                        <div class="slide-case-study__content">
+                            <article class="ppt-panel ppt-animate-in ppt-delay-2 slide-case-study__headline-panel">
+                                <div class="slide-case-study__headline-tag">Case Focus</div>
+                                <h3>统一治理入口承接高安全要求行业的模型接入</h3>
+                                <p>客户的核心诉求不是简单聚合模型，而是在公司内部策略要求严格的前提下，让不同部门、不同系统、不同模型能力都通过同一条治理链路受控运行。</p>
+                            </article>
+
+                            <div class="slide-case-study__card-grid">
+                                <article class="ppt-card ppt-card-capability ppt-animate-in ppt-delay-2 slide-case-study__case-card">
+                                    <div class="ppt-card-topline">
+                                        <span class="ppt-card-index">01</span>
+                                        <span class="ppt-card-en">Pain Point</span>
+                                    </div>
+                                    <h3 class="ppt-card-title">核心问题</h3>
+                                    <ul class="ppt-card-list">
+                                        <li>多个品牌模型、多个云账号以及自建 GPU 模型接口并存，接入体系天然复杂。</li>
+                                        <li>通信行业对内网边界、安全审计和策略统一有更高要求，分散接入难以满足要求。</li>
+                                        <li>多个部门并行接入后，如果缺少统一入口和统一权限体系，资源滥用与问题排查都会变难。</li>
+                                    </ul>
+                                </article>
+
+                                <article class="ppt-card ppt-card-capability ppt-animate-in ppt-delay-3 slide-case-study__case-card slide-case-study__case-card-accent">
+                                    <div class="ppt-card-topline">
+                                        <span class="ppt-card-index">02</span>
+                                        <span class="ppt-card-en">Solution</span>
+                                    </div>
+                                    <h3 class="ppt-card-title">方案落点</h3>
+                                    <ul class="ppt-card-list">
+                                        <li>通过私有化部署建立统一的 LLM API 管理入口，统一接入外部账号和内部私有模型。</li>
+                                        <li>利用 Provider、Router、API Key 和用户组能力，对部门、系统和模型能力分层治理。</li>
+                                        <li>统一接入日志、指标、链路追踪和内容安全能力，满足审计留痕与风险控制要求。</li>
+                                    </ul>
+                                </article>
+
+                                <article class="ppt-card ppt-card-capability ppt-animate-in ppt-delay-4 slide-case-study__case-card slide-case-study__case-card-soft">
+                                    <div class="ppt-card-topline">
+                                        <span class="ppt-card-index">03</span>
+                                        <span class="ppt-card-en">Value</span>
+                                    </div>
+                                    <h3 class="ppt-card-title">业务价值</h3>
+                                    <ul class="ppt-card-list">
+                                        <li>在满足内网、安全和边界隔离要求的前提下，实现多来源 LLM API 的统一纳管。</li>
+                                        <li>跨部门、跨系统的大模型接入效率更高，同时减少分散配置带来的治理风险。</li>
+                                        <li>通过统一的内容安全、审计和可观测能力，更好支持高安全要求行业的长期落地。</li>
+                                    </ul>
+                                </article>
+                            </div>
+
+                            <div class="slide-case-study__result-strip ppt-animate-in ppt-delay-4">
+                                <div class="slide-case-study__result-card">
+                                    <span>合规能力</span>
+                                    <strong>统一审计留痕</strong>
+                                    <p>所有模型调用统一沉淀日志、指标和链路追踪信息。</p>
+                                </div>
+                                <div class="slide-case-study__result-card">
+                                    <span>组织治理</span>
+                                    <strong>按部门独立归因</strong>
+                                    <p>授权、分账和统计都能下沉到部门与业务系统。</p>
+                                </div>
+                                <div class="slide-case-study__result-card">
+                                    <span>风险控制</span>
+                                    <strong>内容安全前置</strong>
+                                    <p>对敏感信息和高风险请求统一过滤、脱敏与审计。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="slide ppt-slide-shell ppt-theme-blue slide-closing" id="slide-18" data-title="Q&amp;A">
+                    <div class="ppt-bg-grid ppt-bg-grid-drift"></div>
+                    <div class="ppt-bg-glow"></div>
+                    <div class="ppt-bg-orbit"></div>
+                    <div class="slide-closing__ambient"></div>
+
+                    <div class="slide-closing__shell">
+                        <div class="slide-closing__main">
+                            <div class="slide-closing__brand-row ppt-animate-in ppt-delay-1">
+                                <img src="assets/images/webp/logo-placeholder.webp" alt="晓石 Logo">
+                                <span>成都破晓石科技有限公司</span>
+                            </div>
+
+                            <h2 class="slide-closing__title ppt-animate-in ppt-delay-1">Q&amp;A</h2>
+                            <p class="slide-closing__lead ppt-animate-in ppt-delay-2">感谢您的聆听，期待与您共创 AI 未来。</p>
+
+                            <div class="slide-closing__summary-strip ppt-animate-in ppt-delay-2">
+                                <span class="slide-closing__summary-pill">免费试用</span>
+                                <span class="slide-closing__summary-pill">POC 测试</span>
+                                <span class="slide-closing__summary-pill">方案交流</span>
+                            </div>
+
+                            <article class="ppt-panel ppt-animate-in ppt-delay-3 slide-closing__cta-card">
+                                <span class="slide-closing__cta-kicker">Call to action</span>
+                                <h3>联系我们申请免费试用与 POC 测试</h3>
+                                <p>从方案沟通、环境评估到试点验证，晓石团队可协同企业快速完成第一阶段落地。</p>
+                            </article>
+                        </div>
+
+                        <aside class="slide-closing__aside">
+                            <article class="ppt-panel ppt-animate-in ppt-delay-2 slide-closing__contact-card">
+                                <h3>联系方式</h3>
+                                <p>欢迎扫码添加联系，获取产品资料、试用信息与 POC 沟通支持。</p>
+
+                                <div class="slide-closing__contact-qr">
+                                    <img src="assets/images/webp/qrcode.webp" alt="扫码添加微信">
+                                </div>
+
+                                <div class="slide-closing__contact-meta-grid">
+                                    <div class="slide-closing__contact-meta-item">
+                                        <span>官方网站</span>
+                                        <strong>https://poxiaoshi.cn</strong>
+                                    </div>
+                                    <div class="slide-closing__contact-meta-item">
+                                        <span>邮箱地址</span>
+                                        <strong>support@xiaoshiai.cn</strong>
+                                    </div>
+                                    <div class="slide-closing__contact-meta-item">
+                                        <span>联系电话</span>
+                                        <strong>18180523455</strong>
+                                    </div>
+                                </div>
+
+                                <div class="slide-closing__contact-list">
+                                    <span>现场提问</span>
+                                    <span>资料获取</span>
+                                    <span>合作沟通</span>
+                                </div>
+                            </article>
+                        </aside>
+                    </div>
+                </section>
+            </div>
+
+            <div class="slides-overlay">
+                <div class="global-watermark" id="global-watermark">
+                    <img src="assets/images/webp/logo-placeholder.webp" alt="AI Portal Logo">
+                    <span>晓石云</span>
+                </div>
+
+                <div class="nav-controls">
+                    <div class="nav-prev-zone"></div>
+                    <div class="nav-next-zone"></div>
+                    <button class="nav-btn nav-prev" id="btn-prev" aria-label="上一页">
+                        <svg viewBox="0 0 24 24"><path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+                    </button>
+                    <button class="nav-btn nav-next" id="btn-next" aria-label="下一页">
+                        <svg viewBox="0 0 24 24"><path d="m8.59 16.59 1.41 1.41L16 12 10 6 8.59 7.41 13.17 12z"/></svg>
+                    </button>
+
+                    <div class="footer-bar-zone"></div>
+                    <div class="footer-bar">
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" id="progress-bar"></div>
+                        </div>
+                        <div class="status-info">
+                            <div><span id="current-page">1</span> / <span id="total-pages">14</span></div>
+                            <div id="slide-title">封面</div>
+                            <button class="fullscreen-btn" id="btn-fullscreen" aria-label="全屏">
+                                <svg viewBox="0 0 24 24"><path d="M7 14H5v5h5v-2H7v-3zm0-4h2V7h3V5H5v5zm10 7h-3v2h5v-5h-2v3zm0-12V5h-5v2h3v3h2V5z"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/navigation.js"></script>
+</body>
+</html>

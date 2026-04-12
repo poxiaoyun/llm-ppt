@@ -1,0 +1,332 @@
+/* =========================================
+   Enterprise Tech PPT Starter Base
+   固定 16:9 画布、导航、水印、动画与品牌基础变量
+   ========================================= */
+
+:root {
+    --brand-name: "AI Portal";
+    --brand-watermark: "AI Portal";
+
+    --color-primary: #1E60F8;
+    --color-secondary: #00B976;
+    --color-accent: #6C5DD3;
+    --color-amber: #F59E0B;
+
+    --color-bg-light: #F8F9FB;
+    --color-bg-white: #FFFFFF;
+    --color-bg-dark: #0A1128;
+
+    --color-text-main: #1A1D27;
+    --color-text-muted: #64748B;
+    --color-text-light: #FFFFFF;
+
+    --color-border: #E2E8F0;
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 12px 24px rgba(0, 0, 0, 0.12);
+
+    --font-heading: 'Inter', -apple-system, BlinkMacSystemFont, "PingFang SC", "HarmonyOS Sans SC", "Microsoft YaHei", sans-serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, "PingFang SC", "HarmonyOS Sans SC", "Microsoft YaHei", sans-serif;
+
+    --slide-width: 1920px;
+    --slide-height: 1080px;
+
+    --transition-speed: 0.6s;
+    --transition-easing: cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: var(--font-body);
+    color: var(--color-text-main);
+    background-color: #000;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+p {
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.presentation-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide-viewport {
+    position: absolute;
+    width: var(--slide-width);
+    height: var(--slide-height);
+    top: 0;
+    left: 0;
+    transform-origin: top left;
+    background-color: var(--color-bg-light);
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.slides-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.slides-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 999;
+    pointer-events: none;
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 1;
+    transition:
+        opacity var(--transition-speed) var(--transition-easing),
+        visibility var(--transition-speed) var(--transition-easing),
+        transform var(--transition-speed) var(--transition-easing);
+    transform: translateY(20px);
+}
+
+.slide.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    z-index: 10;
+    transform: translateY(0);
+}
+
+.slide.past {
+    transform: translateY(-20px);
+}
+
+.global-watermark {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.global-watermark.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.global-watermark.on-dark img {
+    filter: brightness(0) invert(1);
+}
+
+.global-watermark.on-dark span {
+    color: #FFFFFF;
+}
+
+.global-watermark img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+}
+
+.global-watermark span {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: #0A1128;
+}
+
+.nav-controls {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 100;
+}
+
+.nav-prev-zone,
+.nav-next-zone,
+.footer-bar-zone {
+    pointer-events: auto;
+    position: absolute;
+    z-index: 90;
+}
+
+.nav-prev-zone,
+.nav-next-zone {
+    top: 0;
+    width: 15%;
+    height: 100%;
+}
+
+.nav-prev-zone {
+    left: 0;
+}
+
+.nav-next-zone {
+    right: 0;
+}
+
+.footer-bar-zone {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 84px;
+}
+
+.nav-btn {
+    pointer-events: auto;
+    position: absolute;
+    top: 50%;
+    width: 64px;
+    height: 108px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 14px;
+    background: rgba(10, 17, 40, 0.08);
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(-50%);
+    transition: opacity 0.24s ease, background 0.24s ease;
+}
+
+.nav-prev {
+    left: 18px;
+}
+
+.nav-next {
+    right: 18px;
+}
+
+.nav-prev-zone:hover ~ .nav-prev,
+.nav-next-zone:hover ~ .nav-next,
+.nav-prev:hover,
+.nav-next:hover {
+    opacity: 1;
+}
+
+.nav-btn:hover {
+    background: rgba(10, 17, 40, 0.14);
+}
+
+.nav-btn svg {
+    width: 38px;
+    height: 38px;
+    fill: rgba(255, 255, 255, 0.94);
+}
+
+.footer-bar {
+    pointer-events: auto;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.56);
+    opacity: 0;
+    transition: opacity 0.28s ease;
+    z-index: 91;
+}
+
+.footer-bar-zone:hover ~ .footer-bar,
+.footer-bar:hover {
+    opacity: 1;
+}
+
+.progress-bar-container {
+    width: 100%;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background: var(--color-primary);
+    transition: width 0.3s ease;
+}
+
+.status-info {
+    height: 38px;
+    padding: 0 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 14px;
+}
+
+.fullscreen-btn {
+    background: none;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0.76;
+    transition: opacity 0.2s ease;
+}
+
+.fullscreen-btn:hover {
+    opacity: 1;
+}
+
+.fullscreen-btn svg {
+    width: 18px;
+    height: 18px;
+    fill: #FFFFFF;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+}
+
+.active .fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
