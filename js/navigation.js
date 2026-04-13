@@ -18,6 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const btnPrev = document.getElementById('btn-prev');
     const btnNext = document.getElementById('btn-next');
+    const prevZone = document.querySelector('.nav-prev-zone');
+    const nextZone = document.querySelector('.nav-next-zone');
     const progressBar = document.getElementById('progress-bar');
     const pageCounter = document.getElementById('current-page');
     const totalPages = document.getElementById('total-pages');
@@ -119,6 +121,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (btnPrev) {
         btnPrev.addEventListener('click', prevSlide);
+    }
+
+    if (nextZone) {
+        nextZone.addEventListener('click', nextSlide);
+    }
+
+    if (prevZone) {
+        prevZone.addEventListener('click', prevSlide);
     }
 
     document.addEventListener('keydown', (event) => {

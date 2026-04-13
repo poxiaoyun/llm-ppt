@@ -214,6 +214,7 @@ a {
 .nav-btn {
     pointer-events: auto;
     position: absolute;
+    z-index: 92;
     top: 50%;
     width: 64px;
     height: 108px;
